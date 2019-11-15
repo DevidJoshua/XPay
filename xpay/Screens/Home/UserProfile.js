@@ -3,28 +3,32 @@ import PropTypes from 'prop-types'
 import { StyleSheet, View, Image, Text, TouchableOpacity } from 'react-native'
 import { Center } from '@builderx/utils'
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons'
-import {isIphoneX} from '../../../Lib/helper/platform'
-import {Images} from '../../../Themes'
+import { isIphoneX } from '../../Lib/helper/platform'
+import { Images } from '../../Themes'
 
 export default class UserProfile extends Component {
   static propTypes = {
     showSaldo: PropTypes.bool
   }
+
   //
   // // Defaults for props
   static defaultProps = {
     showSaldo: true
   }
+
   constructor (props) {
     super(props)
     this.state = {
       showSaldo: this.props.showSaldo
     }
-    this._toggleShowSaldo = this._toggleShowSaldo.bind(this)
+    this.handleToggleShowSaldo = this.handleToggleShowSaldo.bind(this)
   }
-  _toggleShowSaldo () {
-    this.setState({showSaldo: !this.state.showSaldo})
+
+  handleToggleShowSaldo () {
+    this.setState({ showSaldo: !this.state.showSaldo })
   }
+
   render () {
     return (
       <View style={[styles.container, this.props.style]}>
@@ -33,17 +37,25 @@ export default class UserProfile extends Component {
           style={styles.image}
         />
         {/* <Center horizontal> */}
-        <Text style={styles.text}>Nofrets Poaiiii</Text>
+        <Text style={styles.text}>Nofrets Poai</Text>
         {/* </Center> */}
         {/* <Center horizontal> */}
         {/* </Center> */}
-        {this.state.showSaldo && (<TouchableOpacity style={styles.iconStack} onPress={this._toggleShowSaldo}>
-          <Text style={styles.text2}>My wallet</Text>
-          <Text style={styles.text3}>IDR 900,000</Text>
-        </TouchableOpacity>)}
-        {!this.state.showSaldo && (<TouchableOpacity style={styles.iconStack} onPress={this._toggleShowSaldo}>
-          <Image source={Images.walletIcon} />
-        </TouchableOpacity>)}
+        {
+          this.state.showSaldo && (
+            <TouchableOpacity style={styles.iconStack} onPress={this.handleToggleShowSaldo}>
+              <Text style={styles.text2}>My wallet</Text>
+              <Text style={styles.text3}>IDR 900,000</Text>
+            </TouchableOpacity>
+          )
+        }
+        {
+          !this.state.showSaldo && (
+            <TouchableOpacity style={styles.iconStack} onPress={this.handleToggleShowSaldo}>
+              <Image source={Images.walletIcon} />
+            </TouchableOpacity>
+          )
+        }
       </View>
     )
   }

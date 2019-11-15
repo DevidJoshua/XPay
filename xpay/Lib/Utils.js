@@ -1,8 +1,8 @@
 import Moment from 'moment'
 import { merge, path } from 'ramda'
 import {
-    AsyncStorage
-  } from 'react-native'
+  AsyncStorage
+} from 'react-native'
 import AppConfig from '../Config/AppConfig'
 
 var AES = require('crypto-js/aes')
@@ -11,12 +11,12 @@ var sha256 = require('crypto-js/sha256')
 var EncUtf8 = require('crypto-js/enc-utf8')
 
 const userPriv = {
-  '400': 'Customer',
-  '310': 'Merchant Support',
-  '300': 'Merchant Admin',
-  '210': 'Institution Support',
-  '200': 'Institution Admin',
-  '100': 'Operator'
+  400: 'Customer',
+  310: 'Merchant Support',
+  300: 'Merchant Admin',
+  210: 'Institution Support',
+  200: 'Institution Admin',
+  100: 'Operator'
 }
 
 export const getAccessToken = (accessTokenState) => {
@@ -58,15 +58,15 @@ export const decryptAt = (msg, key) => {
   return plaintext
 }
 export const isLoggedIn = async (isLoggedInState) => {
-    console.log('isLoggedIn isLoggedInState1===>', isLoggedInState)
+  console.log('isLoggedIn isLoggedInState1===>', isLoggedInState)
   if (isLoggedInState) return true
-  let loginFlag = await getSession(AppConfig.loginFlag)
+  const loginFlag = await getSession(AppConfig.loginFlag)
   console.log('isLoggedIn loginFlag===>', loginFlag)
-    // isLoggedInState = isLoggedInState || loginFlag || false
+  // isLoggedInState = isLoggedInState || loginFlag || false
   isLoggedInState = loginFlag || false
   if ((isLoggedInState === 'true' || isLoggedInState === true)) isLoggedInState = true
   else isLoggedInState = false
-    console.log('isLoggedIn isLoggedInState2===>', isLoggedInState)
+  console.log('isLoggedIn isLoggedInState2===>', isLoggedInState)
   return isLoggedInState
 }
 export const generateHmac = (msg) => {
@@ -75,7 +75,7 @@ export const generateHmac = (msg) => {
 export const setSession = async (newSession, cb) => {
   console.log('setSession')
   console.log('newSession==>', setSession)
-  let encryptedCurrentSession = await AsyncStorage.getItem(AppConfig.sessionData)
+  const encryptedCurrentSession = await AsyncStorage.getItem(AppConfig.sessionData)
   let currentSessionJson = {}
   if (encryptedCurrentSession) {
     // decrypt
@@ -94,7 +94,7 @@ export const setSession = async (newSession, cb) => {
 }
 export const getSession = async (parameter, parameterInState) => {
   if (parameterInState !== null && parameterInState !== '' && parameterInState !== undefined) return parameterInState
-  let encryptedCurrentSession = await AsyncStorage.getItem(AppConfig.sessionData)
+  const encryptedCurrentSession = await AsyncStorage.getItem(AppConfig.sessionData)
   console.log('encryptedCurrentSession=', encryptedCurrentSession)
   let currentSessionJson = {}
   if (encryptedCurrentSession) {
@@ -104,7 +104,7 @@ export const getSession = async (parameter, parameterInState) => {
     console.log('decryptedData=', decryptedData)
     currentSessionJson = JSON.parse(decryptedData)
   }
-  let sessionValue = path([parameter], currentSessionJson) || ''
+  const sessionValue = path([parameter], currentSessionJson) || ''
   console.log('getSession parameter=', parameter)
   console.log('getSession sessionValue=', sessionValue)
   return sessionValue

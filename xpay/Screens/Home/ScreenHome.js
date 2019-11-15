@@ -6,7 +6,8 @@ import {
   Left,
   Right,
   Body,
-  Text
+  Text,
+  Button
 } from 'native-base'
 import { ImageBackground, View, StatusBar } from 'react-native'
 import { isIphoneX } from '../../Lib/helper/platform'
@@ -15,7 +16,6 @@ import CardSwipe from './CardSwipe'
 import Footer from '../../Containers/Footer'
 import { Images, Metrics, Colors } from '../../Themes'
 import UserProfile from './UserProfile'
-import MaterialButtonViolet from '../../Components/Button/MaterialButtonViolet'
 
 const styles = {
   container: {
@@ -50,12 +50,13 @@ class ScreenHome extends Component {
             </View>
             <View style={{ height: 300 }}>
               <CardSwipe />
-              <Text style={{ alignSelf: 'center', position: 'relative', top: -13 }}>Long Click to view the qr code</Text>
+              <Text style={{ alignSelf: 'center', position: 'relative', top: -13 }}>Long Press to view the qr code</Text>
             </View>
-            <MaterialButtonViolet title='Add Card' onPress={() => this.props.navigation.navigate('ScreenAddCard')} style={styles.ButtonVioletSignUp} />
           </Content>
-          
         </ImageBackground>
+        <Button block dark style={{ backgroundColor: Colors.colorPrimaryDark }} onPress={() => this.props.navigation.navigate('ScreenAddCard')}>
+          <Text>Add Card</Text>
+        </Button>
         <Footer />
       </Container>
     )
