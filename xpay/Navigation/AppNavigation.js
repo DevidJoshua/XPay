@@ -10,9 +10,12 @@ import ScreenOtpValidation from '../Screens/OtpValidation/ScreenOtpValidation'
 import ScreenAddCard from '../Screens/AddCard/ScreenAddCard'
 import ScreenHome from '../Screens/Home/ScreenHome'
 import ScreenSignup from '../Screens/Signup/ScreenSignup'
+import ScreenSignin from '../Screens/Signin/ScreenSignin'
 import ScreenShowqr from '../Screens/Showqr/ScreenShowqr'
 import ScreenScanQr from '../Screens/ScanQr/ScreenScanQr'
 import ScreenTransactionDetail from '../Screens/TransactionDetail/ScreenTransactionDetail'
+import ScreenTransactionComplete from '../Screens/TransactionComplete/ScreenTransactionComplete'
+import ScreenSuccessBind from '../Screens/SuccessBind/ScreenSuccessBind'
 // import ScreenHome from '../Components/ScreenHome'
 // import ScreenHome from '../Containers/ScreenHome'
 import ScreenQr from '../Components/ScreenQr'
@@ -49,8 +52,9 @@ const loggedinNavigator = StackNavigator({
   ScreenTransactionsuccess: { screen: ScreenTransactionsuccess},
   ScreenScanThisQR: { screen: ScreenScanThisQR},
   ScreenAmount: { screen: ScreenAmount},
-  ScreenSuccessBind: { screen: ScreeSuccessBind},
-  ScreenAddCard: { screen: ScreenAddCard}
+  ScreenSuccessBind: { screen: ScreenSuccessBind},
+  ScreenAddCard: { screen: ScreenAddCard},
+  ScreenTransactionComplete: { screen: ScreenTransactionComplete},
 }, {
   // Default config for all screens
   headerMode: 'none',
@@ -63,6 +67,7 @@ const loggedinNavigator = StackNavigator({
 const unloggedinNavigator = StackNavigator({
   ScreenLogin: { screen: ScreenLogin },
   ScreenSignup: {screen: ScreenSignup},
+  ScreenSignin: {screen: ScreenSignin},
   ScreenEmailconfirm: { screen: ScreenEmailconfirm}
 }, {
     // Default config for all screens

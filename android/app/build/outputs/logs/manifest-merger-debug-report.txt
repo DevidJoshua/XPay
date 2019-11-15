@@ -1,0 +1,375 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/erevnauser/workspace/XPay/android/app/src/main/AndroidManifest.xml:1:1-31:12
+INJECTED from /Users/erevnauser/workspace/XPay/android/app/src/main/AndroidManifest.xml:1:1-31:12
+INJECTED from /Users/erevnauser/workspace/XPay/android/app/src/main/AndroidManifest.xml:1:1-31:12
+INJECTED from /Users/erevnauser/workspace/XPay/android/app/src/main/AndroidManifest.xml:1:1-31:12
+MERGED from /Users/erevnauser/workspace/XPay/android/app/src/main/AndroidManifest.xml:1:1-31:12
+MERGED from [:@react-native-community_async-storage] /Users/erevnauser/workspace/XPay/node_modules/@react-native-community/async-storage/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:@react-native-community_viewpager] /Users/erevnauser/workspace/XPay/node_modules/@react-native-community/viewpager/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-camera] /Users/erevnauser/workspace/XPay/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:2:1-18:12
+MERGED from [:react-native-device-info] /Users/erevnauser/workspace/XPay/node_modules/react-native-device-info/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-22:12
+MERGED from [:react-native-gesture-handler] /Users/erevnauser/workspace/XPay/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-i18n] /Users/erevnauser/workspace/XPay/node_modules/react-native-i18n/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-orientation] /Users/erevnauser/workspace/XPay/node_modules/react-native-orientation/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-svg] /Users/erevnauser/workspace/XPay/node_modules/react-native-svg/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-vector-icons] /Users/erevnauser/workspace/XPay/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [com.facebook.react:react-native:0.61.4] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/90fb270a74975c857f44b31055035d62/AndroidManifest.xml:2:1-13:12
+MERGED from [org.webkit:android-jsc:r245459] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/1a820454c8392ff9bf68adbc4cda2d6c/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-linear-gradient] /Users/erevnauser/workspace/XPay/node_modules/react-native-linear-gradient/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.appcompat:appcompat:1.0.2] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/83901f565cbf590c15fe4eb08619e923/AndroidManifest.xml:17:1-22:12
+MERGED from [com.facebook.fresco:fresco:2.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/f4a43debb523d5ab7f4cd9720fb70cbf/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/8c1dedb70123366629f87c674d3ecfdd/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:drawee:2.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/cf8dcd2548267ea2cb88e4ec03f46ee1/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:nativeimagefilters:2.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/27fda1a1922395a1d3f935bd78966416/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline:2.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/3ceb642d72dc34ef1c96863c21dd3f05/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:nativeimagetranscoder:2.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/5062fa1e0c8bac6378cdd68eed7d71b2/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/391714824da52aedb312ef13905c18ce/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/165d14063e87d569c43f1a34dda603d5/AndroidManifest.xml:2:1-13:12
+MERGED from [com.google.android.gms:play-services-vision:17.0.2] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/b935ece530eb5d5c06f66f2d4233b47c/AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.exifinterface:exifinterface:1.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/6b3b86cec9dbd6dbaf9cf3971ca6417e/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/43b25ad2ff9e37c94b2b428d239f58fe/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-iid:17.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/f9d85a539961f0949515091e39e01969/AndroidManifest.xml:17:1-28:12
+MERGED from [com.google.android.gms:play-services-vision-common:17.0.2] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/0f67aca68464263cf03661123b90d954/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-clearcut:16.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/0152fbbbbabea3f7c565d750a68efa27/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-flags:16.0.1] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/a2cc85ab11b6cbe73957412ad2b58208/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-phenotype:16.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/d0d26fed063417239699e66ec93f44f9/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-base:17.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/305ec82374a403d8a5bac192e681bccd/AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/74988a38f5b6903996175395a7124fe6/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/b11342cd10a057d92dd932d9d2bba6f4/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/a44c5f81e401b924e944647efdc496ea/AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.fragment:fragment:1.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/f7e8d5847e287c69e25562609ddf943c/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/150f99b2b1e9187d8d033943d01bdd4d/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/55a6656027328a3447bf56de774011b9/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/cb4b5f1dda73c44e7f402ca42d71568c/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/a9ea2a12001a4aaa380ab3690000e3a9/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media:media:1.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/e9c7fa5f191e49ee081e644886b938d0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/0917efe779b3cbb39f3a2ce7b82e3d8b/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/d6f603b662508abb5fe1dfcdb2b0908d/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/a289484e4a2420f950151a89a4fddae1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/d05b17b6d8e298e3a51e28a1e4d21822/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/efb9510bbc8a30f522603bd4d2e1fcc8/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/d44f1f1a8e1eed30c62cc3ab0191aedb/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/27c9bab36df27ee1914b413a59d84dd9/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/98ff3c7b8ec9be5a75c6161a01de6342/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.0.1] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/f4df4091cc7a885ac60fcd0be632ce4f/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/8993e535eaecaaac8ed63ae2a497fd52/AndroidManifest.xml:17:1-25:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/75917460b49f3004c36eb70c1eb77883/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/c939d91f8b9e2abcc271ae3951edda6b/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/129eab6bd7f257dad713a32567c0f630/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/9e8f47a9191119176c2d911ab3f03b98/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/fc7f44757c68f20790242b8627acdba9/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/2d5cf4fb8ab8d9bd0ea93952809e26b9/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/2aa324c63d6b71632d926ddcf87dca59/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/60ab00fc03dc72f6daac21a0fda0731a/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/4994a6d43c091db4ecfadd35bf20850d/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/0f4d2733754fddc116016775bd4f9241/AndroidManifest.xml:17:1-22:12
+MERGED from [com.facebook.fresco:fbcore:2.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/82980974acb75fdac8db13b2324965c6/AndroidManifest.xml:2:1-9:12
+INJECTED from /Users/erevnauser/workspace/XPay/android/app/src/debug/AndroidManifest.xml:2:1-8:12
+INJECTED from /Users/erevnauser/workspace/XPay/android/app/src/debug/AndroidManifest.xml:2:1-8:12
+INJECTED from /Users/erevnauser/workspace/XPay/android/app/src/debug/AndroidManifest.xml:2:1-8:12
+	package
+		ADDED from /Users/erevnauser/workspace/XPay/android/app/src/main/AndroidManifest.xml:2:3-21
+		INJECTED from /Users/erevnauser/workspace/XPay/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/erevnauser/workspace/XPay/android/app/src/main/AndroidManifest.xml:2:3-21
+		INJECTED from /Users/erevnauser/workspace/XPay/android/app/src/debug/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/erevnauser/workspace/XPay/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/erevnauser/workspace/XPay/android/app/src/main/AndroidManifest.xml:1:1-31:12
+		INJECTED from /Users/erevnauser/workspace/XPay/android/app/src/debug/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /Users/erevnauser/workspace/XPay/android/app/src/debug/AndroidManifest.xml:3:5-51
+	android:versionCode
+		INJECTED from /Users/erevnauser/workspace/XPay/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/erevnauser/workspace/XPay/android/app/src/main/AndroidManifest.xml:1:1-31:12
+		INJECTED from /Users/erevnauser/workspace/XPay/android/app/src/debug/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/erevnauser/workspace/XPay/android/app/src/main/AndroidManifest.xml:1:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /Users/erevnauser/workspace/XPay/android/app/src/main/AndroidManifest.xml:4:5-67
+MERGED from [com.google.android.gms:play-services-iid:17.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/f9d85a539961f0949515091e39e01969/AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-iid:17.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/f9d85a539961f0949515091e39e01969/AndroidManifest.xml:24:5-67
+	android:name
+		ADDED from /Users/erevnauser/workspace/XPay/android/app/src/main/AndroidManifest.xml:4:22-64
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/erevnauser/workspace/XPay/android/app/src/main/AndroidManifest.xml:5:5-81
+	android:name
+		ADDED from /Users/erevnauser/workspace/XPay/android/app/src/main/AndroidManifest.xml:5:22-78
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/erevnauser/workspace/XPay/android/app/src/main/AndroidManifest.xml:6:5-79
+	android:name
+		ADDED from /Users/erevnauser/workspace/XPay/android/app/src/main/AndroidManifest.xml:6:22-76
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from /Users/erevnauser/workspace/XPay/android/app/src/main/AndroidManifest.xml:8:5-81
+	android:name
+		ADDED from /Users/erevnauser/workspace/XPay/android/app/src/main/AndroidManifest.xml:8:22-78
+uses-permission#android.permission.VIBRATE
+ADDED from /Users/erevnauser/workspace/XPay/android/app/src/main/AndroidManifest.xml:9:5-66
+	android:name
+		ADDED from /Users/erevnauser/workspace/XPay/android/app/src/main/AndroidManifest.xml:9:22-63
+application
+ADDED from /Users/erevnauser/workspace/XPay/android/app/src/main/AndroidManifest.xml:11:5-29:19
+MERGED from /Users/erevnauser/workspace/XPay/android/app/src/main/AndroidManifest.xml:11:5-29:19
+MERGED from /Users/erevnauser/workspace/XPay/android/app/src/main/AndroidManifest.xml:11:5-29:19
+MERGED from [:react-native-device-info] /Users/erevnauser/workspace/XPay/node_modules/react-native-device-info/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-20:19
+MERGED from [:react-native-device-info] /Users/erevnauser/workspace/XPay/node_modules/react-native-device-info/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-20:19
+MERGED from [com.facebook.react:react-native:0.61.4] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/90fb270a74975c857f44b31055035d62/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.react:react-native:0.61.4] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/90fb270a74975c857f44b31055035d62/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/165d14063e87d569c43f1a34dda603d5/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/165d14063e87d569c43f1a34dda603d5/AndroidManifest.xml:11:5-20
+MERGED from [com.google.android.gms:play-services-vision:17.0.2] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/b935ece530eb5d5c06f66f2d4233b47c/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-vision:17.0.2] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/b935ece530eb5d5c06f66f2d4233b47c/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-iid:17.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/f9d85a539961f0949515091e39e01969/AndroidManifest.xml:26:5-20
+MERGED from [com.google.android.gms:play-services-iid:17.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/f9d85a539961f0949515091e39e01969/AndroidManifest.xml:26:5-20
+MERGED from [com.google.android.gms:play-services-vision-common:17.0.2] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/0f67aca68464263cf03661123b90d954/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-vision-common:17.0.2] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/0f67aca68464263cf03661123b90d954/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-clearcut:16.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/0152fbbbbabea3f7c565d750a68efa27/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-clearcut:16.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/0152fbbbbabea3f7c565d750a68efa27/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-phenotype:16.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/d0d26fed063417239699e66ec93f44f9/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-phenotype:16.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/d0d26fed063417239699e66ec93f44f9/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-base:17.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/305ec82374a403d8a5bac192e681bccd/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:17.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/305ec82374a403d8a5bac192e681bccd/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/74988a38f5b6903996175395a7124fe6/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/74988a38f5b6903996175395a7124fe6/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/b11342cd10a057d92dd932d9d2bba6f4/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/b11342cd10a057d92dd932d9d2bba6f4/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/a44c5f81e401b924e944647efdc496ea/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/a44c5f81e401b924e944647efdc496ea/AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.core:core:1.0.1] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/f4df4091cc7a885ac60fcd0be632ce4f/AndroidManifest.xml:22:5-89
+MERGED from [androidx.core:core:1.0.1] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/f4df4091cc7a885ac60fcd0be632ce4f/AndroidManifest.xml:22:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/8993e535eaecaaac8ed63ae2a497fd52/AndroidManifest.xml:22:5-23:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/8993e535eaecaaac8ed63ae2a497fd52/AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.0.1] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/f4df4091cc7a885ac60fcd0be632ce4f/AndroidManifest.xml:22:18-86
+	android:label
+		ADDED from /Users/erevnauser/workspace/XPay/android/app/src/main/AndroidManifest.xml:13:7-39
+		ADDED from /Users/erevnauser/workspace/XPay/android/app/src/main/AndroidManifest.xml:13:7-39
+	tools:ignore
+		ADDED from /Users/erevnauser/workspace/XPay/android/app/src/debug/AndroidManifest.xml:7:75-114
+	android:roundIcon
+		ADDED from /Users/erevnauser/workspace/XPay/android/app/src/main/AndroidManifest.xml:15:7-52
+		ADDED from /Users/erevnauser/workspace/XPay/android/app/src/main/AndroidManifest.xml:15:7-52
+	tools:targetApi
+		ADDED from /Users/erevnauser/workspace/XPay/android/app/src/debug/AndroidManifest.xml:7:54-74
+	android:icon
+		ADDED from /Users/erevnauser/workspace/XPay/android/app/src/main/AndroidManifest.xml:14:7-41
+		ADDED from /Users/erevnauser/workspace/XPay/android/app/src/main/AndroidManifest.xml:14:7-41
+	android:allowBackup
+		ADDED from /Users/erevnauser/workspace/XPay/android/app/src/main/AndroidManifest.xml:16:7-34
+		ADDED from /Users/erevnauser/workspace/XPay/android/app/src/main/AndroidManifest.xml:16:7-34
+	android:theme
+		ADDED from /Users/erevnauser/workspace/XPay/android/app/src/main/AndroidManifest.xml:17:7-38
+		ADDED from /Users/erevnauser/workspace/XPay/android/app/src/main/AndroidManifest.xml:17:7-38
+	android:usesCleartextTraffic
+		ADDED from /Users/erevnauser/workspace/XPay/android/app/src/debug/AndroidManifest.xml:7:18-53
+	android:name
+		ADDED from /Users/erevnauser/workspace/XPay/android/app/src/main/AndroidManifest.xml:12:7-38
+		ADDED from /Users/erevnauser/workspace/XPay/android/app/src/main/AndroidManifest.xml:12:7-38
+activity#com.xpay.MainActivity
+ADDED from /Users/erevnauser/workspace/XPay/android/app/src/main/AndroidManifest.xml:18:7-27:18
+	android:label
+		ADDED from /Users/erevnauser/workspace/XPay/android/app/src/main/AndroidManifest.xml:20:9-41
+	android:windowSoftInputMode
+		ADDED from /Users/erevnauser/workspace/XPay/android/app/src/main/AndroidManifest.xml:22:9-51
+	android:configChanges
+		ADDED from /Users/erevnauser/workspace/XPay/android/app/src/main/AndroidManifest.xml:21:9-79
+	android:name
+		ADDED from /Users/erevnauser/workspace/XPay/android/app/src/main/AndroidManifest.xml:19:9-37
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/erevnauser/workspace/XPay/android/app/src/main/AndroidManifest.xml:23:9-26:25
+action#android.intent.action.MAIN
+ADDED from /Users/erevnauser/workspace/XPay/android/app/src/main/AndroidManifest.xml:24:13-65
+	android:name
+		ADDED from /Users/erevnauser/workspace/XPay/android/app/src/main/AndroidManifest.xml:24:21-62
+category#android.intent.category.LAUNCHER
+ADDED from /Users/erevnauser/workspace/XPay/android/app/src/main/AndroidManifest.xml:25:13-73
+	android:name
+		ADDED from /Users/erevnauser/workspace/XPay/android/app/src/main/AndroidManifest.xml:25:23-70
+activity#com.facebook.react.devsupport.DevSettingsActivity
+ADDED from /Users/erevnauser/workspace/XPay/android/app/src/main/AndroidManifest.xml:28:7-84
+	android:name
+		ADDED from /Users/erevnauser/workspace/XPay/android/app/src/main/AndroidManifest.xml:28:17-81
+uses-sdk
+INJECTED from /Users/erevnauser/workspace/XPay/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/erevnauser/workspace/XPay/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/erevnauser/workspace/XPay/android/app/src/main/AndroidManifest.xml
+MERGED from [:@react-native-community_async-storage] /Users/erevnauser/workspace/XPay/node_modules/@react-native-community/async-storage/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:@react-native-community_async-storage] /Users/erevnauser/workspace/XPay/node_modules/@react-native-community/async-storage/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:@react-native-community_viewpager] /Users/erevnauser/workspace/XPay/node_modules/@react-native-community/viewpager/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:@react-native-community_viewpager] /Users/erevnauser/workspace/XPay/node_modules/@react-native-community/viewpager/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-camera] /Users/erevnauser/workspace/XPay/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-camera] /Users/erevnauser/workspace/XPay/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-device-info] /Users/erevnauser/workspace/XPay/node_modules/react-native-device-info/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-device-info] /Users/erevnauser/workspace/XPay/node_modules/react-native-device-info/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-gesture-handler] /Users/erevnauser/workspace/XPay/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-gesture-handler] /Users/erevnauser/workspace/XPay/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-i18n] /Users/erevnauser/workspace/XPay/node_modules/react-native-i18n/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-i18n] /Users/erevnauser/workspace/XPay/node_modules/react-native-i18n/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-orientation] /Users/erevnauser/workspace/XPay/node_modules/react-native-orientation/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-orientation] /Users/erevnauser/workspace/XPay/node_modules/react-native-orientation/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-svg] /Users/erevnauser/workspace/XPay/node_modules/react-native-svg/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-svg] /Users/erevnauser/workspace/XPay/node_modules/react-native-svg/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-vector-icons] /Users/erevnauser/workspace/XPay/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-vector-icons] /Users/erevnauser/workspace/XPay/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.61.4] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/90fb270a74975c857f44b31055035d62/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.61.4] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/90fb270a74975c857f44b31055035d62/AndroidManifest.xml:7:5-9:41
+MERGED from [org.webkit:android-jsc:r245459] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/1a820454c8392ff9bf68adbc4cda2d6c/AndroidManifest.xml:7:5-9:41
+MERGED from [org.webkit:android-jsc:r245459] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/1a820454c8392ff9bf68adbc4cda2d6c/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-linear-gradient] /Users/erevnauser/workspace/XPay/node_modules/react-native-linear-gradient/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-linear-gradient] /Users/erevnauser/workspace/XPay/node_modules/react-native-linear-gradient/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.appcompat:appcompat:1.0.2] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/83901f565cbf590c15fe4eb08619e923/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.0.2] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/83901f565cbf590c15fe4eb08619e923/AndroidManifest.xml:20:5-44
+MERGED from [com.facebook.fresco:fresco:2.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/f4a43debb523d5ab7f4cd9720fb70cbf/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fresco:2.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/f4a43debb523d5ab7f4cd9720fb70cbf/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/8c1dedb70123366629f87c674d3ecfdd/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/8c1dedb70123366629f87c674d3ecfdd/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:2.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/cf8dcd2548267ea2cb88e4ec03f46ee1/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:2.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/cf8dcd2548267ea2cb88e4ec03f46ee1/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagefilters:2.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/27fda1a1922395a1d3f935bd78966416/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagefilters:2.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/27fda1a1922395a1d3f935bd78966416/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:2.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/3ceb642d72dc34ef1c96863c21dd3f05/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:2.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/3ceb642d72dc34ef1c96863c21dd3f05/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagetranscoder:2.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/5062fa1e0c8bac6378cdd68eed7d71b2/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagetranscoder:2.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/5062fa1e0c8bac6378cdd68eed7d71b2/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/391714824da52aedb312ef13905c18ce/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/391714824da52aedb312ef13905c18ce/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/165d14063e87d569c43f1a34dda603d5/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/165d14063e87d569c43f1a34dda603d5/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.android.gms:play-services-vision:17.0.2] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/b935ece530eb5d5c06f66f2d4233b47c/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-vision:17.0.2] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/b935ece530eb5d5c06f66f2d4233b47c/AndroidManifest.xml:5:5-44
+MERGED from [androidx.exifinterface:exifinterface:1.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/6b3b86cec9dbd6dbaf9cf3971ca6417e/AndroidManifest.xml:20:5-44
+MERGED from [androidx.exifinterface:exifinterface:1.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/6b3b86cec9dbd6dbaf9cf3971ca6417e/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/43b25ad2ff9e37c94b2b428d239f58fe/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/43b25ad2ff9e37c94b2b428d239f58fe/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-iid:17.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/f9d85a539961f0949515091e39e01969/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-iid:17.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/f9d85a539961f0949515091e39e01969/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-vision-common:17.0.2] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/0f67aca68464263cf03661123b90d954/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-vision-common:17.0.2] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/0f67aca68464263cf03661123b90d954/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-clearcut:16.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/0152fbbbbabea3f7c565d750a68efa27/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-clearcut:16.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/0152fbbbbabea3f7c565d750a68efa27/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-flags:16.0.1] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/a2cc85ab11b6cbe73957412ad2b58208/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-flags:16.0.1] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/a2cc85ab11b6cbe73957412ad2b58208/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-phenotype:16.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/d0d26fed063417239699e66ec93f44f9/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-phenotype:16.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/d0d26fed063417239699e66ec93f44f9/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:17.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/305ec82374a403d8a5bac192e681bccd/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:17.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/305ec82374a403d8a5bac192e681bccd/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/74988a38f5b6903996175395a7124fe6/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/74988a38f5b6903996175395a7124fe6/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/b11342cd10a057d92dd932d9d2bba6f4/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/b11342cd10a057d92dd932d9d2bba6f4/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/a44c5f81e401b924e944647efdc496ea/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/a44c5f81e401b924e944647efdc496ea/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/f7e8d5847e287c69e25562609ddf943c/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/f7e8d5847e287c69e25562609ddf943c/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/150f99b2b1e9187d8d033943d01bdd4d/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/150f99b2b1e9187d8d033943d01bdd4d/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/55a6656027328a3447bf56de774011b9/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/55a6656027328a3447bf56de774011b9/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/cb4b5f1dda73c44e7f402ca42d71568c/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/cb4b5f1dda73c44e7f402ca42d71568c/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/a9ea2a12001a4aaa380ab3690000e3a9/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/a9ea2a12001a4aaa380ab3690000e3a9/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/e9c7fa5f191e49ee081e644886b938d0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/e9c7fa5f191e49ee081e644886b938d0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/0917efe779b3cbb39f3a2ce7b82e3d8b/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/0917efe779b3cbb39f3a2ce7b82e3d8b/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/d6f603b662508abb5fe1dfcdb2b0908d/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/d6f603b662508abb5fe1dfcdb2b0908d/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/a289484e4a2420f950151a89a4fddae1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/a289484e4a2420f950151a89a4fddae1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/d05b17b6d8e298e3a51e28a1e4d21822/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/d05b17b6d8e298e3a51e28a1e4d21822/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/efb9510bbc8a30f522603bd4d2e1fcc8/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/efb9510bbc8a30f522603bd4d2e1fcc8/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/d44f1f1a8e1eed30c62cc3ab0191aedb/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/d44f1f1a8e1eed30c62cc3ab0191aedb/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/27c9bab36df27ee1914b413a59d84dd9/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/27c9bab36df27ee1914b413a59d84dd9/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/98ff3c7b8ec9be5a75c6161a01de6342/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/98ff3c7b8ec9be5a75c6161a01de6342/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.1] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/f4df4091cc7a885ac60fcd0be632ce4f/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.1] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/f4df4091cc7a885ac60fcd0be632ce4f/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/8993e535eaecaaac8ed63ae2a497fd52/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/8993e535eaecaaac8ed63ae2a497fd52/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/75917460b49f3004c36eb70c1eb77883/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/75917460b49f3004c36eb70c1eb77883/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/c939d91f8b9e2abcc271ae3951edda6b/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/c939d91f8b9e2abcc271ae3951edda6b/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/129eab6bd7f257dad713a32567c0f630/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/129eab6bd7f257dad713a32567c0f630/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/9e8f47a9191119176c2d911ab3f03b98/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/9e8f47a9191119176c2d911ab3f03b98/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/fc7f44757c68f20790242b8627acdba9/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/fc7f44757c68f20790242b8627acdba9/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/2d5cf4fb8ab8d9bd0ea93952809e26b9/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/2d5cf4fb8ab8d9bd0ea93952809e26b9/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/2aa324c63d6b71632d926ddcf87dca59/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/2aa324c63d6b71632d926ddcf87dca59/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/60ab00fc03dc72f6daac21a0fda0731a/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/60ab00fc03dc72f6daac21a0fda0731a/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/4994a6d43c091db4ecfadd35bf20850d/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/4994a6d43c091db4ecfadd35bf20850d/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/0f4d2733754fddc116016775bd4f9241/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/0f4d2733754fddc116016775bd4f9241/AndroidManifest.xml:20:5-44
+MERGED from [com.facebook.fresco:fbcore:2.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/82980974acb75fdac8db13b2324965c6/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:2.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/82980974acb75fdac8db13b2324965c6/AndroidManifest.xml:5:5-7:41
+INJECTED from /Users/erevnauser/workspace/XPay/android/app/src/debug/AndroidManifest.xml
+INJECTED from /Users/erevnauser/workspace/XPay/android/app/src/debug/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/erevnauser/workspace/XPay/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/erevnauser/workspace/XPay/android/app/src/debug/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/erevnauser/workspace/XPay/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/erevnauser/workspace/XPay/android/app/src/debug/AndroidManifest.xml
+uses-permission#android.permission.SYSTEM_ALERT_WINDOW
+ADDED from /Users/erevnauser/workspace/XPay/android/app/src/debug/AndroidManifest.xml:5:5-77
+	android:name
+		ADDED from /Users/erevnauser/workspace/XPay/android/app/src/debug/AndroidManifest.xml:5:22-75
+uses-permission#android.permission.CAMERA
+ADDED from [:react-native-camera] /Users/erevnauser/workspace/XPay/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:9:5-65
+	android:name
+		ADDED from [:react-native-camera] /Users/erevnauser/workspace/XPay/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:9:22-62
+uses-feature#android.hardware.camera
+ADDED from [:react-native-camera] /Users/erevnauser/workspace/XPay/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:11:5-13:36
+	android:required
+		ADDED from [:react-native-camera] /Users/erevnauser/workspace/XPay/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:13:9-33
+	android:name
+		ADDED from [:react-native-camera] /Users/erevnauser/workspace/XPay/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:12:9-47
+uses-feature#android.hardware.camera.autofocus
+ADDED from [:react-native-camera] /Users/erevnauser/workspace/XPay/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:14:5-16:36
+	android:required
+		ADDED from [:react-native-camera] /Users/erevnauser/workspace/XPay/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:16:9-33
+	android:name
+		ADDED from [:react-native-camera] /Users/erevnauser/workspace/XPay/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:15:9-57
+receiver#com.learnium.RNDeviceInfo.RNDeviceReceiver
+ADDED from [:react-native-device-info] /Users/erevnauser/workspace/XPay/node_modules/react-native-device-info/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-19:20
+	android:enabled
+		ADDED from [:react-native-device-info] /Users/erevnauser/workspace/XPay/node_modules/react-native-device-info/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-35
+	android:exported
+		ADDED from [:react-native-device-info] /Users/erevnauser/workspace/XPay/node_modules/react-native-device-info/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-36
+	android:name
+		ADDED from [:react-native-device-info] /Users/erevnauser/workspace/XPay/node_modules/react-native-device-info/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-70
+intent-filter#action:name:com.android.vending.INSTALL_REFERRER
+ADDED from [:react-native-device-info] /Users/erevnauser/workspace/XPay/node_modules/react-native-device-info/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:13-18:29
+action#com.android.vending.INSTALL_REFERRER
+ADDED from [:react-native-device-info] /Users/erevnauser/workspace/XPay/node_modules/react-native-device-info/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:17-79
+	android:name
+		ADDED from [:react-native-device-info] /Users/erevnauser/workspace/XPay/node_modules/react-native-device-info/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:25-76
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from [com.google.android.gms:play-services-iid:17.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/f9d85a539961f0949515091e39e01969/AndroidManifest.xml:23:5-82
+	android:name
+		ADDED from [com.google.android.gms:play-services-iid:17.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/f9d85a539961f0949515091e39e01969/AndroidManifest.xml:23:22-79
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:17.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/305ec82374a403d8a5bac192e681bccd/AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:17.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/305ec82374a403d8a5bac192e681bccd/AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:17.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/305ec82374a403d8a5bac192e681bccd/AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:17.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/305ec82374a403d8a5bac192e681bccd/AndroidManifest.xml:24:13-79
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:17.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/a44c5f81e401b924e944647efdc496ea/AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:17.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/a44c5f81e401b924e944647efdc496ea/AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:17.0.0] /Users/erevnauser/.gradle/caches/transforms-2/files-2.1/a44c5f81e401b924e944647efdc496ea/AndroidManifest.xml:24:13-58

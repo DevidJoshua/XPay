@@ -16,7 +16,7 @@ class MaterialIconButtonsFooter extends Component {
         </TouchableOpacity>
         <TouchableOpacity style={styles.buttonWrapper2} >
         </TouchableOpacity>
-        <TouchableOpacity style={styles.buttonWrapper3} onPress={() => this.props.navigation.replace('ScreenTransactionsuccess')} >
+        <TouchableOpacity style={styles.buttonWrapper3} onPress={() => this.props.navigation.replace('ScreenTransactionComplete')} >
           <Icon
             name={'check'}
             type={'MaterialCommunityIcons'}

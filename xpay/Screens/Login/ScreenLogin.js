@@ -54,9 +54,9 @@ class ScreenLogin extends React.Component {
       <View style={styles.mainContainer}>
         <ImageBackground source={Images.backgroundXpay} style={{width: '100%', height: '100%'}}>
           <ScrollView style={styles.container}>
-            {/* <View style={{marginTop: 50, alignItems: 'center'}}>
+            <View style={{marginTop: 50, alignItems: 'center'}}>
               <Image source={Images.logoBayar2} style={styles.logo} />
-            </View> */}
+            </View> 
             <View style={{marginTop: 80}}>
               <View style={styles.centered}>
                 <TextInput style={styles.inputBox}

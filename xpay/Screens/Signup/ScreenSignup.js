@@ -22,7 +22,7 @@ export default class ScreenSingup extends Component {
 
   handleSubmit () {
     console.log('submit form ', this.state.form)
-    this.props.navigation.navigate('ScreenEmailconfirm')
+    this.props.navigation.navigate('ScreenSignin')
   }
 
   render () {
@@ -41,12 +41,12 @@ export default class ScreenSingup extends Component {
             <Right />
           </Header>
           <ScrollView>
-            <MaterialFixedLabelTextbox name='email' onChangeText={this.handleChange} placeholder='Email' />
-            <MaterialFixedLabelTextbox name='fullname' onChangeText={this.handleChange} placeholder='Full Name' />
-            <MaterialFixedLabelTextbox name='noId' onChangeText={this.handleChange} placeholder='No. ID' />
-            <MaterialFixedLabelTextbox name='address' onChangeText={this.handleChange} placeholder='Address' multiline style={styles.TextboxAddress} />
-            <MaterialFixedLabelTextbox name='phoneNumber' onChangeText={this.handleChange} placeholder='Phone Number' />
-            <MaterialButtonViolet onPress={this.handleSubmit} />
+            <MaterialFixedLabelTextbox name='email' onChangeText={this.handleChange} placeholder={'Email'} style={styles.TextboxEmail} />
+            <MaterialFixedLabelTextbox name='fullname' onChangeText={this.handleChange} placeholder={'Full Name'} />
+            <MaterialFixedLabelTextbox name='noId' onChangeText={this.handleChange} placeholder={'No. ID'} />
+            <MaterialFixedLabelTextbox name='address' onChangeText={this.handleChange} placeholder={'Address'} multiline style={styles.TextboxAddress} />
+            <MaterialFixedLabelTextbox name='phoneNumber' onChangeText={this.handleChange} placeholder={'Phone Number'} />
+            <MaterialButtonViolet onPress={this.handleSubmit} style={styles.ButtonVioletSignUp} />
 
           </ScrollView>
         </ImageBackground>
@@ -89,7 +89,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'rgba(230, 230, 230,1)',
     borderRadius: 5,
     alignSelf: 'center',
-    marginTop: 26
+    marginTop: 40
   },
   TextboxFullname: {
     width: 350,
@@ -124,12 +124,12 @@ const styles = StyleSheet.create({
     marginTop: 12
   },
   ButtonVioletSignUp: {
-    // width: 350,
-    // height: 59,
-    // backgroundColor: '#eb1c24',
-    // borderRadius: 5,
-    // alignSelf: 'center',
-    // marginTop: 24
+    width: 350,
+    height: 59,
+    backgroundColor: '#eb1c24',
+    borderRadius: 5,
+    alignSelf: 'center',
+    marginTop: 60
   },
   statusBar: {}
 })
