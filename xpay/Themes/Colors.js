@@ -1,4 +1,5 @@
 const colorPrimaryDark = 'rgba(218,55,49,1)'
+const colorPrimary = 'rgba(218,55,49,1)'
 const colors = {
   background: '#1F0808',
   clear: 'rgba(0,0,0,0)',
@@ -30,7 +31,7 @@ const colors = {
   // colorPrimaryDark: '#eb1c24',
   // colorPrimaryDark: 'rgba(189,12,12,1)',
 
-  colorPrimary: '#00BAD4',
+  colorPrimary,
   colorPrimary1: '#17DFFB',
   cadetblue: '#5f9ea0',
 

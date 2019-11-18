@@ -52,5 +52,15 @@ export default {
         responseDescription: 'SUCCESS'
       }
     }
+  },
+  signupFormSubmit: (data) => {
+    return {
+      ok: true,
+      data: {
+        responseCode: '00',
+        responseMessage: 'SUCCESS',
+        responseDescription: 'SUCCESS'
+      }
+    }
   }
 }

@@ -1,26 +1,26 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import {
-    Container,
-    Header,
-    Title,
-    Content,
-    Button,
-    Footer,
-    FooterTab,
-    Text,
-    Body,
-    Left,
-    Right,
-    Icon,
-    Badge
-  } from 'native-base'
-import { withNavigation } from 'react-navigation' 
+  Container,
+  Header,
+  Title,
+  Content,
+  Button,
+  Footer,
+  FooterTab,
+  Text,
+  Body,
+  Left,
+  Right,
+  Icon,
+  Badge
+} from 'native-base'
+import { withNavigation } from 'react-navigation'
 import _ from 'lodash'
-import {Image} from 'react-native'
-import {isIphoneX} from '../../Lib/helper/platform'
-import {Images} from '../../Themes'
-import {styles} from './styles'
+import { Image } from 'react-native'
+import { isIphoneX } from '../../Lib/helper/platform'
+import { Images } from '../../Themes'
+import { styles } from './styles'
 
 class FooterComponent extends Component {
   constructor (props) {
@@ -31,11 +31,15 @@ class FooterComponent extends Component {
       tab3: false
     }
   }
+
   componentDidMount () {
     if (this.props.initialTab === 'tab1') this.toggleTab1()
     if (this.props.initialTab === 'tab2') this.toggleTab2()
     if (this.props.initialTab === 'tab3') this.toggleTab3()
+
+    if (!this.props.isLoggedIn) this.props.navigation.navigate('unloggedinNavigator')
   }
+
   componentDidUpdate (prevProps) {
     console.log('componentDidUpdate ===> prevProps=', prevProps)
     console.log('componentDidUpdate ===> this.props=', this.props)
@@ -43,6 +47,7 @@ class FooterComponent extends Component {
       if (!this.props.isLoggedIn) this.props.navigation.navigate('unloggedinNavigator')
     }
   }
+
   toggleTab1 () {
     this.setState({
       tab1: true,
@@ -51,6 +56,7 @@ class FooterComponent extends Component {
     })
     // this.props.onSelectTab('tab1')
   }
+
   toggleTab2 () {
     this.setState({
       tab1: false,
@@ -59,6 +65,7 @@ class FooterComponent extends Component {
     })
     // this.props.onSelectTab('tab2')
   }
+
   toggleTab3 () {
     this.setState({
       tab1: false,
@@ -67,16 +74,15 @@ class FooterComponent extends Component {
     })
     // this.props.onSelectTab('tab3')
   }
+
   render () {
-    let showCreateQr = false
+    const showCreateQr = false
     return (
       <Footer>
         <FooterTab>
           {showCreateQr && <Button
             // active={this.state.tab1}
             onPress={() => this.props.navigtion.navigate('ScreenScanQr')}
-            // vertical
-            // badge
           >
             {/* <Badge>
               <Text>2</Text>
@@ -87,10 +93,11 @@ class FooterComponent extends Component {
           </Button>}
           <Button
             // active={this.state.tab2}
-            onPress={() => this.props.navigation.navigate('ScreenTransactionDetail')}
+            onPress={() => this.props.navigation.navigate('ScreenScanQr')}
+            // onPress={() => this.props.navigation.navigate('ScreenTransactionDetail')}
           >
             {/* <Icon active={this.state.tab2} name='camera' /> */}
-            <Image source={Images.scan} />
+            <Image source={Images.scan} style={{ height: 35, resizeMode: 'contain' }} />
             {/* <Text>Pay</Text> */}
           </Button>
           <Button
@@ -98,7 +105,7 @@ class FooterComponent extends Component {
             onPress={() => this.props.sessionLogout()}
           >
             {/* <Icon active={this.state.tab2} name='camera' /> */}
-            <Image source={Images.logout} />
+            <Image source={Images.logout} style={{ height: 35, resizeMode: 'contain' }} />
             {/* <Text>Logout</Text> */}
           </Button>
         </FooterTab>

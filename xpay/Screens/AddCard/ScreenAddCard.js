@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component } from 'react'
 import {
   Container,
   Content,
@@ -9,54 +9,74 @@ import {
   Body,
   Right,
   Text,
-  Icon
-} from "native-base";
-import {ImageBackground, View} from 'react-native'
-import { Grid, Row } from "react-native-easy-grid";
+  Icon,
+  Segment,
+  Card,
+  CardItem,
+  Thumbnail
+} from 'native-base'
+import { ImageBackground, View, Dimensions, Image } from 'react-native'
+import { Grid, Row } from 'react-native-easy-grid'
 import Footer from '../../Containers/Footer'
-import {Images, Metrics, Colors} from '../../Themes'
+import { Images, Metrics, Colors } from '../../Themes'
 import FormAddCard from './FormAddCard'
 
 const styles = {
-    container: {
-      backgroundColor: "#fff"
-    },
-    backgroundImg: {
-        flex: 1,
-        width: Metrics.screenWidth
-    }
+  container: {
+    backgroundColor: '#fff'
+  },
+  backgroundImg: {
+    flex: 1,
+    width: Metrics.screenWidth
+  },
+  text: {
+    alignSelf: "center",
+    marginBottom: 7
+  },
+  mb: {
+    marginBottom: 15
   }
-  class ScreenAddCard extends Component {
-  render() {
+}
+const deviceWidth = Dimensions.get("window").width;
+const logo = Images.logo
+const cardImage = Images.drawerCover
+
+class ScreenAddCard extends Component {
+  render () {
     return (
       <Container style={styles.container}>
         <ImageBackground source={Images.backgroundXpay} style={styles.backgroundImg}>
-            <Header rounded>
-              <Left>
-                <Button transparent onPress={() => this.props.navigation.goBack()}>
-                  <Icon name="arrow-back" />
-                </Button>
-              </Left>
-              <Body>
-                <Title>Add Card</Title>
-              </Body>
-              <Right />
-            </Header>
-            <Grid>
-              <Row />
-              <Row style={{height: 200}}>
-                <FormAddCard
-                    onSuccessSubmit={() => {
-                      console.log('onSuccessSubmit=====')
-                      this.props.navigation.navigate('ScreenOtpValidation')
-                    }}
-                  />
-              </Row>
-            </Grid>
+          <Header
+            rounded
+            iosBarStyle='light-content'
+          >
+            <Left>
+              <Button transparent onPress={() => this.props.navigation.goBack()}>
+                <Icon name='arrow-back' />
+              </Button>
+            </Left>
+            <Body>
+              <Title>Add Card</Title>
+            </Body>
+            <Right />
+          </Header>
+          {/* <Content padding> */}
+          {/* <Row style={{backgroundColor: 'yellow'}} /> */}
+          <Content padding contentContainerStyle={{ flex: 1, justifyContent: 'flex-end', padding: 10 }}>
+            <FormAddCard
+              onSuccessSubmit={() => {
+                console.log('onSuccessSubmit=====')
+                this.props.navigation.navigate('ScreenOtpValidation')
+              }}
+            />
+          </Content>
+
+
+          {/* </Content> */}
         </ImageBackground>
       </Container>
-    );
+    )
   }
 }
 
-export default ScreenAddCard;
+export default ScreenAddCard

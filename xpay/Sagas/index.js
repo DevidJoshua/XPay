@@ -10,7 +10,8 @@ import { StartupTypes } from '../Redux/StartupRedux'
 import { WebsocketTypes } from '../Redux/WebsocketRedux'
 import { SessionTypes } from '../Redux/SessionRedux'
 import { AddcardTypes } from '../Screens/AddCard/redux'
-import { OtpvalidationTypes } from '../Screens/OtpValidation/redux'
+import { OtpvalidationTypes } from '../Containers/Otp/redux'
+import { SignupTypes } from '../Containers/Signup/redux'
 
 /* ------------- Sagas ------------- */
 
@@ -18,7 +19,8 @@ import { startup } from './StartupSagas'
 import { websocketSetup } from './WebsocketSagas'
 import { sessionLogin, sessionLogout } from './SessionSagas'
 import { addcardFormSubmit } from '../Screens/AddCard/sagas'
-import { otpvalidationFormSubmit } from '../Screens/OtpValidation/sagas'
+import { otpvalidationFormSubmit } from '../Containers/Otp/sagas'
+import { signupFormSubmit } from '../Containers/Signup/sagas'
 
 /* ------------- API ------------- */
 
@@ -39,6 +41,7 @@ export default function * root () {
     takeLatest(SessionTypes.SESSION_LOGIN, sessionLogin, apiDashboard),
     takeLatest(SessionTypes.SESSION_LOGOUT, sessionLogout, apiDashboard),
     takeLatest(AddcardTypes.ADDCARD_FORM_SUBMIT, addcardFormSubmit, apiDashboard),
-    takeLatest(OtpvalidationTypes.OTPVALIDATION_FORM_SUBMIT, otpvalidationFormSubmit, apiDashboard)
+    takeLatest(OtpvalidationTypes.OTPVALIDATION_FORM_SUBMIT, otpvalidationFormSubmit, apiDashboard),
+    takeLatest(SignupTypes.SIGNUP_FORM_SUBMIT, signupFormSubmit, apiDashboard)
   ])
 }

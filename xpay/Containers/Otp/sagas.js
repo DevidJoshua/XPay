@@ -9,9 +9,9 @@ export function * otpvalidationFormSubmit (api, action) {
   const { data } = action
   const response = yield call(api.otpvalidationFormSubmit, data)
   console.log('response=', response)
-  let otpvalidationFormSubmitMSG = {ir: false, rc: path(['data', 'responseCode'], response), rm: path(['data', 'responseMessage'], response), rd: path(['data', 'responseDescription'], response)}
+  let otpvalidationFormSubmitMSG = { ir: false, rc: path(['data', 'responseCode'], response), rm: path(['data', 'responseMessage'], response), rd: path(['data', 'responseDescription'], response) }
   if (!response.ok) {
-    otpvalidationFormSubmitMSG = {ir: false, rc: '99', rm: 'FAILED_SYSTEM', rd: response.problem}
+    otpvalidationFormSubmitMSG = { ir: false, rc: '99', rm: 'FAILED_SYSTEM', rd: response.problem }
   }
-  yield put(OtpvalidationActions.otpvalidationPatch({otpvalidationFormSubmitMSG}))
+  yield put(OtpvalidationActions.otpvalidationPatch({ otpvalidationFormSubmitMSG }))
 }

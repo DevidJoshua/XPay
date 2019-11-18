@@ -38,14 +38,14 @@ class ReduxNavigation extends React.Component {
       // change to whatever is your first screen, otherwise unpredictable results may occur
       // if (nav.routes.length === 1 && (nav.routes[0].routeName === 'LaunchScreen')) {
       const currentRouteName = getCurrentRouteName(nav)
-        console.log('back navigation getCurrentRouteName(nav)===', currentRouteName)
+      console.log('back navigation getCurrentRouteName(nav)===', currentRouteName)
       if (currentRouteName === 'HomeScreen' || currentRouteName === 'ScreenHome' || currentRouteName == 'ScreenLogin') {
         console.log(nav.routes)
         if (nav.routes.length > 0 && !nav.routes[0].isDrawerOpen) {
           this.backHandler.remove()
           return false
         }
-          // if (nav.routes.length > 1 && (nav.routes[0].index === 0 && nav.index === 0)) {
+        // if (nav.routes.length > 1 && (nav.routes[0].index === 0 && nav.index === 0)) {
         // return false
       }
 

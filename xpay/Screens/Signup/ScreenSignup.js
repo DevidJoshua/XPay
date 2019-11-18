@@ -1,10 +1,12 @@
 import React, { Component } from 'react'
 import { StyleSheet, View, ScrollView, Image, Text, ImageBackground } from 'react-native'
-import { Container, Header, Left, Button, Icon, Body, Title, Right } from 'native-base'
+import { Container, Header, Left, Button, Icon, Body, Title, Right, Content, FormOtpvalidation } from 'native-base'
+import { Grid, Row } from 'react-native-easy-grid'
 // import Icon from 'react-native-vector-icons/MaterialCommunityIcons'
 import MaterialFixedLabelTextbox from '../../Components/InputText/MaterialFixedLabelTextbox'
 import MaterialButtonViolet from '../../Components/Button/MaterialButtonViolet'
 import { Images, Colors, Metrics } from '../../Themes'
+import FormSignup from '../../Containers/Signup/FormSignup'
 
 export default class ScreenSingup extends Component {
   constructor (props) {
@@ -40,15 +42,14 @@ export default class ScreenSingup extends Component {
             </Body>
             <Right />
           </Header>
-          <ScrollView>
-            <MaterialFixedLabelTextbox name='email' onChangeText={this.handleChange} placeholder='Email' />
-            <MaterialFixedLabelTextbox name='fullname' onChangeText={this.handleChange} placeholder='Full Name' />
-            <MaterialFixedLabelTextbox name='noId' onChangeText={this.handleChange} placeholder='No. ID' />
-            <MaterialFixedLabelTextbox name='address' onChangeText={this.handleChange} placeholder='Address' multiline style={styles.TextboxAddress} />
-            <MaterialFixedLabelTextbox name='phoneNumber' onChangeText={this.handleChange} placeholder='Phone Number' />
-            <MaterialButtonViolet onPress={this.handleSubmit} />
-
-          </ScrollView>
+          <Content padding contentContainerStyle={{ flex: 1, justifyContent: 'flex-end', padding: 10 }}>
+            <FormSignup
+              onSuccessSubmit={() => {
+                this.props.navigation.navigate('ScreenSuccessBind')
+              }}
+            />
+            />
+          </Content>
         </ImageBackground>
       </Container>
     )

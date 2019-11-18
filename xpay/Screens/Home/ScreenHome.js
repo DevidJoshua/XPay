@@ -44,13 +44,29 @@ class ScreenHome extends Component {
           StatusBarAnimation='fade'
         />} */}
         <ImageBackground source={Images.backgroundXpay} style={{ flex: 1, width: '100%' }}>
+          {
+            isIphoneX && (
+              <StyledStatusBar
+                translucent
+                backgroundColor={Colors.colorPrimaryDark}
+                barStyle='light-content'
+                StatusBarAnimation='fade'
+              />
+            )
+          }
+          {
+            !isIphoneX && (
+              <Header
+                iosBarStyle='light-content'
+                style={{ height: 0 }}
+              />)
+          }
           <Content>
             <View style={{ flex: 1 }}>
               <UserProfile />
             </View>
             <View style={{ height: 300 }}>
               <CardSwipe />
-              <Text style={{ alignSelf: 'center', position: 'relative', top: -13 }}>Long Press to view the qr code</Text>
             </View>
           </Content>
         </ImageBackground>

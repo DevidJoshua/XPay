@@ -1,14 +1,14 @@
 
 import React from 'react'
-import {View, Text, StyleSheet, ScrollView, TextInput, Alert, ImageBackground, Image, TouchableHighlight, StatusBar} from 'react-native'
+import { View, Text, StyleSheet, ScrollView, TextInput, Alert, ImageBackground, Image, TouchableHighlight, StatusBar } from 'react-native'
 import PropTypes from 'prop-types'
 import _ from 'lodash'
 import { connect } from 'react-redux'
 import Icon from 'react-native-vector-icons/dist/Ionicons'
 
-import {Images, Colors, Metrics} from '../../Themes'
-import {isLoggedIn} from '../../Lib/Utils'
-import SessionAction, {SessionSelectors} from '../../Redux/SessionRedux'
+import { Images, Colors, Metrics } from '../../Themes'
+import { isLoggedIn } from '../../Lib/Utils'
+import SessionAction, { SessionSelectors } from '../../Redux/SessionRedux'
 import PrimarynButton from '../../Components/Button/PrimaryButton'
 
 class ScreenLogin extends React.Component {
@@ -17,10 +17,12 @@ class ScreenLogin extends React.Component {
     sessionToken: PropTypes.string,
     isLoggedIn: PropTypes.bool
   }
+
   static defaultProps = {
     loginRequest: () => {}
     // sessionToken: null
   }
+
   constructor (props) {
     super(props)
     this.state = {
@@ -30,6 +32,7 @@ class ScreenLogin extends React.Component {
     }
     this._doLogin = this._doLogin.bind(this)
   }
+
   async componentDidUpdate (prevProps) {
     console.log('componentDidUpdate this.props.sessionToken=', this.props.sessionToken)
     console.log('componentDidUpdate prevProps.sessionToken=', prevProps.sessionToken)
@@ -39,49 +42,53 @@ class ScreenLogin extends React.Component {
       if (this.props.isLoggedIn) this.props.navigation.navigate('loggedinNavigator')
     }
   }
+
   _doLogin () {
-    let username = this.state.userid
-    let password = this.state.password
+    const username = this.state.userid
+    const password = this.state.password
 
     if (username !== '' && password !== '') {
-      this.props.loginRequest({userid: username, password: password})
+      this.props.loginRequest({ userid: username, password: password })
     } else {
       Alert.alert('invalid userid or password')
     }
   }
+
   render () {
     return (
       <View style={styles.mainContainer}>
-        <ImageBackground source={Images.backgroundXpay} style={{width: '100%', height: '100%'}}>
+        <ImageBackground source={Images.backgroundXpay} style={{ width: '100%', height: '100%' }}>
           <ScrollView style={styles.container}>
-            {/* <View style={{marginTop: 50, alignItems: 'center'}}>
-              <Image source={Images.logoBayar2} style={styles.logo} />
-            </View> */}
-            <View style={{marginTop: 80}}>
+            <View style={{ marginTop: 50, alignItems: 'center' }}>
+              {/* <Image source={Images.logoBayar2} style={styles.logo} /> */}
+            </View>
+            <View style={{ marginTop: 80 }}>
               <View style={styles.centered}>
-                <TextInput style={styles.inputBox}
+                <TextInput
+                                    style={styles.inputBox}
                   placeholder='Email'
                   underlineColorAndroid='rgba(0,0,0,0.5)'
                   selectionColor='#000'
                   keyboardType='email-address'
-                  onChangeText={(v) => this.setState({userid: v})}
-                  textAlign={'center'}
-              />
-                <TextInput style={styles.inputBox}
+                  onChangeText={(v) => this.setState({ userid: v })}
+                  textAlign='center'
+                />
+                <TextInput
+                                    style={styles.inputBox}
                   placeholder='Password'
                   underlineColorAndroid='rgba(0,0,0,0.5)'
                   selectionColor='#000'
                   secureTextEntry
-                  onChangeText={(v) => this.setState({password: v})}
-                  textAlign={'center'}
-              />
+                  onChangeText={(v) => this.setState({ password: v })}
+                  textAlign='center'
+                />
               </View>
-              <View style={{marginTop: 20}}>
-                <PrimarynButton colors={'darkgrey'} title={'LOGIN'} onPress={() => this._doLogin()} />
+              <View style={{ marginTop: 20 }}>
+                <PrimarynButton colors='darkgrey' title='LOGIN' onPress={() => this._doLogin()} />
               </View>
               <View style={styles.centered}>
                 <Text>Dont have an acoount yet?</Text>
-                <Text style={styles.textSignup} onPress={() => this.props.navigation.navigate('ScreenSignup')} >SignUp</Text>
+                <Text style={styles.textSignup} onPress={() => this.props.navigation.navigate('ScreenSignup')}>SignUp</Text>
               </View>
             </View>
           </ScrollView>
@@ -136,7 +143,6 @@ const styles = StyleSheet.create({
   statusBar: {}
 
 })
-
 
 // REDUX CONNECTION
 export default connect(

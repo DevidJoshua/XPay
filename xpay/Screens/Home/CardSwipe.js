@@ -2,12 +2,10 @@ import React, { Component } from 'react'
 import {
   View,
   Image,
-  StatusBar,
-  Dimensions,
   StyleSheet,
-  Text,
   TouchableOpacity
 } from 'react-native'
+import { Button, Icon, Text } from 'native-base'
 import { Images, Metrics } from '../../Themes'
 // import Swiper from 'react-native-swiper'
 import ViewPager from '@react-native-community/viewpager'
@@ -22,9 +20,8 @@ const styles = StyleSheet.create({
   },
   slide: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center'
-    // backgroundColor: '#9DD6EB'
+    // justifyContent: 'center',
+    // alignItems: 'center',
   },
   text: {
     color: '#fff',
@@ -40,7 +37,32 @@ const styles = StyleSheet.create({
     flex: 1,
     width,
     padding: 3,
-    backgroundColor: 'white'
+    // backgroundColor: '#c0c0c0'
+  },
+  attrWrap: {
+    // backgroundColor: '#c0c0c0',
+    flexDirection: 'row',
+    justifyContent: 'center'
+  },
+  button: {
+    margin: 5,
+    backgroundColor: '#87868c',
+    height: 40
+  },
+  buttonImage: {
+    resizeMode: 'contain',
+    height: 35
+  },
+  cardNumberWrap: {
+    position: 'absolute',
+    backgroundColor: '#87868c',
+    width: '100%',
+    top: 148
+  },
+  cardNumber: {
+    fontSize: 24,
+    // alignSelf: 'center',
+    color: 'white'
   }
 })
 // cardBni: require('../Images/Cards/bni.png'),
@@ -51,21 +73,39 @@ class CardSwipe extends Component {
   render () {
     return (
       <ViewPager style={styles.wrapper}>
-        <TouchableOpacity key='1' style={styles.slide} onLongPress={() => this.props.navigation.navigate('ScreenShowqr')}>
+        <View key='1' style={styles.slide}>
           <View style={styles.imgWrap}>
             <Image source={Images.cardBni} style={styles.img} />
           </View>
-        </TouchableOpacity>
-        <TouchableOpacity key='2' style={styles.slide} onLongPress={() => this.props.navigation.navigate('ScreenShowqr')}>
+          <View style={styles.attrWrap}>
+            <Button style={styles.button} small onPress={() => this.props.navigation.navigate('ScreenShowqr')}>
+              <Text style={styles.cardNumber}>0000 0000 0000 0000</Text>
+              <Image style={styles.buttonImage} source={Images.QR} />
+            </Button>
+          </View>
+        </View>
+        <View key='2' style={styles.slide}>
           <View style={styles.imgWrap}>
             <Image source={Images.cardBri1} style={styles.img} />
           </View>
-        </TouchableOpacity>
-        <TouchableOpacity key='3' style={styles.slide} onLongPress={() => this.props.navigation.navigate('ScreenShowqr')}>
+          <View style={styles.attrWrap}>
+            <Button style={styles.button} small onPress={() => this.props.navigation.navigate('ScreenShowqr')}>
+              <Text style={styles.cardNumber}>0000 0000 0000 0000</Text>
+              <Image style={styles.buttonImage} source={Images.QR} />
+            </Button>
+          </View>
+        </View>
+        <View key='3' style={styles.slide}>
           <View style={styles.imgWrap}>
             <Image source={Images.mandiri} style={styles.img} />
           </View>
-        </TouchableOpacity>
+          <View style={styles.attrWrap}>
+            <Button style={styles.button} small onPress={() => this.props.navigation.navigate('ScreenShowqr')}>
+              <Text style={styles.cardNumber}>0000 0000 0000 0000</Text>
+              <Image style={styles.buttonImage} source={Images.QR} />
+            </Button>
+          </View>
+        </View>
       </ViewPager>
     )
   }

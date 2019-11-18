@@ -131,7 +131,7 @@ export default {
 
   // Color
   // brandPrimary: platform === PLATFORM.IOS ? '#007aff' : '#3F51B5',
-  brandPrimary: platform === PLATFORM.IOS ? '#da3731' : '#da3731',
+  brandPrimary: platform === PLATFORM.IOS ? 'rgba(218,55,49,1)' : 'rgba(218,55,49,1)',
   brandInfo: '#62B1F6',
   brandSuccess: '#5cb85c',
   brandDanger: '#d9534f',
@@ -181,7 +181,7 @@ export default {
   // Header
   toolbarBtnColor: platform === PLATFORM.IOS ? '#fff' : '#fff',
   // toolbarBtnColor: platform === PLATFORM.IOS ? '#007aff' : '#fff',
-  toolbarDefaultBg: platform === PLATFORM.IOS ? '#c41f19' : '#c41f19',
+  toolbarDefaultBg: platform === PLATFORM.IOS ? 'rgba(218,55,49,1)' : 'rgba(218,55,49,1)',
   // toolbarDefaultBg: platform === PLATFORM.IOS ? '#F8F8F8' : '#3F51B5',
   toolbarHeight: platform === PLATFORM.IOS ? 64 : 56,
   toolbarSearchIconSize: platform === PLATFORM.IOS ? 20 : 23,

@@ -36,19 +36,17 @@ class FormOtpvalidation extends Component {
 
   render () {
     return (
-      <Content padder>
-        <Form>
-          <Text style={{ alignSelf: 'center', marginBottom: 10 }}>OTP</Text>
-          <Item fixedLabel regular>
-            {/* <Label>OTP</Label> */}
-            <Input style={{ textAlign: 'center' }} placeholder='ex. 123456' placeholderTextColor='#d3d3d3' />
-          </Item>
-        </Form>
+      <Form>
+        <Text style={{ alignSelf: 'center', marginBottom: 10 }}>OTP</Text>
+        <Item fixedLabel regular>
+          {/* <Label>OTP</Label> */}
+          <Input style={{ textAlign: 'center' }} placeholder='ex. 123456' placeholderTextColor='#d3d3d3' />
+        </Item>
         <Button block style={{ margin: 15, backgroundColor: Colors.colorPrimaryDark }} onPress={() => this.props.otpvalidationFormSubmit({})}>
           <Text>Submit OTP</Text>
         </Button>
         {this.props.otpvalidationFormSubmitMSG.ir && <Spinner color='green' />}
-      </Content>
+      </Form>
     )
   }
 }
@@ -56,7 +54,7 @@ class FormOtpvalidation extends Component {
 const mapStateToProps = (state, ownProps) => {
   // const foo = params.get('foo'); // bar
   return {
-    otpvalidationFormSubmitMSG: OtpvalidationSelectors.otpvalidationFormSubmitMSG(state.otpvalidation)
+    otpvalidationFormSubmitMSG: OtpvalidationSelectors.otpvalidationFormSubmitMSG(state.otp)
   }
 }
 
