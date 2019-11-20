@@ -87,6 +87,10 @@ const images = {
   cardBri1: require('../Images/Cards/bri1.jpg'),
   // cardBri2: require('../Images/Cards/bri2.png'),
   mandiri: require('../Images/Cards/Mandiri.png'),
+  idcard1: require('../Images/Cards/idcard1.png'),
+  idcard2: require('../Images/Cards/idcard2.png'),
+  cardname: require('../Images/Cards/cardname.png'),
+  tableqr: require('../Images/Cards/tableqr.jpg'),
   cardImage2: require('../Images/cardImage2.png')
 }
 

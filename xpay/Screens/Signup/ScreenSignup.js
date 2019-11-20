@@ -12,7 +12,8 @@ export default class ScreenSingup extends Component {
   constructor (props) {
     super(props)
     this.state = {
-      form: {}
+      form: {},
+      formSent: false
     }
     this.handleChange = this.handleChange.bind(this)
     this.handleSubmit = this.handleSubmit.bind(this)
@@ -24,13 +25,12 @@ export default class ScreenSingup extends Component {
 
   handleSubmit () {
     console.log('submit form ', this.state.form)
-    this.props.navigation.navigate('ScreenEmailconfirm')
   }
 
   render () {
     return (
       <Container>
-        <ImageBackground source={Images.backgroundXpay} style={{ flex: 1, width: Metrics.screenWidth }}>
+        <ImageBackground source={Images.backgroundXpay} style={{ width: '100%', height: '100%' }}>
           <Header>
             <Left>
               <Button transparent onPress={() => this.props.navigation.goBack()}>
@@ -42,13 +42,17 @@ export default class ScreenSingup extends Component {
             </Body>
             <Right />
           </Header>
-          <Content padding contentContainerStyle={{ flex: 1, justifyContent: 'flex-end', padding: 10 }}>
-            <FormSignup
-              onSuccessSubmit={() => {
-                this.props.navigation.navigate('ScreenSuccessBind')
-              }}
-            />
-            />
+          <Content contentContainerStyle={{ flex: 1, justifyContent: 'flex-end', padding: 10 }}>
+            {
+              !this.state.formSent && (
+                <FormSignup
+                  onSuccessSubmit={() => this.setState({ formSent: true })}
+                />
+              )
+            }
+            {this.state.formSent && (
+              <Text>Success submit</Text>
+            )}
           </Content>
         </ImageBackground>
       </Container>

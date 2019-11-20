@@ -1,6 +1,7 @@
 
 import React from 'react'
-import { View, Text, StyleSheet, ScrollView, TextInput, Alert, ImageBackground, Image, TouchableHighlight, StatusBar } from 'react-native'
+import { View, StyleSheet, Alert, ImageBackground, Image, TouchableHighlight, StatusBar } from 'react-native'
+import { Button, Text, Container, Form, Input, Item, Content } from 'native-base'
 import PropTypes from 'prop-types'
 import _ from 'lodash'
 import { connect } from 'react-redux'
@@ -56,42 +57,27 @@ class ScreenLogin extends React.Component {
 
   render () {
     return (
-      <View style={styles.mainContainer}>
+      <Container style={{}}>
         <ImageBackground source={Images.backgroundXpay} style={{ width: '100%', height: '100%' }}>
-          <ScrollView style={styles.container}>
-            <View style={{ marginTop: 50, alignItems: 'center' }}>
-              {/* <Image source={Images.logoBayar2} style={styles.logo} /> */}
+          <Content padder>
+            <View style={{ margin: 30, alignItems: 'center' }}>
+              <Image source={Images.logoBayar2} style={styles.logo} />
             </View>
-            <View style={{ marginTop: 80 }}>
-              <View style={styles.centered}>
-                <TextInput
-                                    style={styles.inputBox}
-                  placeholder='Email'
-                  underlineColorAndroid='rgba(0,0,0,0.5)'
-                  selectionColor='#000'
-                  keyboardType='email-address'
-                  onChangeText={(v) => this.setState({ userid: v })}
-                  textAlign='center'
-                />
-                <TextInput
-                                    style={styles.inputBox}
-                  placeholder='Password'
-                  underlineColorAndroid='rgba(0,0,0,0.5)'
-                  selectionColor='#000'
-                  secureTextEntry
-                  onChangeText={(v) => this.setState({ password: v })}
-                  textAlign='center'
-                />
-              </View>
-              <View style={{ marginTop: 20 }}>
-                <PrimarynButton colors='darkgrey' title='LOGIN' onPress={() => this._doLogin()} />
-              </View>
-              <View style={styles.centered}>
-                <Text>Dont have an acoount yet?</Text>
-                <Text style={styles.textSignup} onPress={() => this.props.navigation.navigate('ScreenSignup')}>SignUp</Text>
-              </View>
-            </View>
-          </ScrollView>
+            {/* <View style={{ flex: 1, marginTop: 50, alignItems: 'center' }}> */}
+            <Form>
+              <Item>
+                <Input placeholder="Username" style={{ textAlign: 'center' }} onChangeText={(v) => this.setState({ userid: v })} keyboardType='email-address' />
+              </Item>
+              <Item>
+                <Input placeholder="Password" secureTextEntry style={{ textAlign: 'center' }} onChangeText={(v) => this.setState({ password: v })} />
+              </Item>
+              <Button block style={{ margin: 15, marginTop: 50 }} onPress={() => this._doLogin()}>
+                <Text>Sign In</Text>
+              </Button>
+              <Text style={{ alignSelf: 'center' }}>Dont have an acoount yet?</Text>
+              <Text style={{ alignSelf: 'center', textDecorationLine: 'underline' }} onPress={() => this.props.navigation.navigate('ScreenSignup')}>SignUp</Text>
+            </Form>
+          </Content>
         </ImageBackground>
         {/* <StatusBar
           animated
@@ -99,7 +85,7 @@ class ScreenLogin extends React.Component {
           backgroundColor={'rgba(189,12,12,1)'}
           style={styles.statusBar}
         /> */}
-      </View>
+      </Container>
     )
   }
 }

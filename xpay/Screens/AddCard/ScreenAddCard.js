@@ -45,7 +45,7 @@ class ScreenAddCard extends Component {
   render () {
     return (
       <Container style={styles.container}>
-        <ImageBackground source={Images.backgroundXpay} style={styles.backgroundImg}>
+        <ImageBackground source={Images.backgroundXpay} style={{ width: '100%', height: '100%' }}>
           <Header
             rounded
             iosBarStyle='light-content'
@@ -62,7 +62,7 @@ class ScreenAddCard extends Component {
           </Header>
           {/* <Content padding> */}
           {/* <Row style={{backgroundColor: 'yellow'}} /> */}
-          <Content padding contentContainerStyle={{ flex: 1, justifyContent: 'flex-end', padding: 10 }}>
+          <Content contentContainerStyle={{ flex: 1, justifyContent: 'flex-end', padding: 10 }}>
             <FormAddCard
               onSuccessSubmit={() => {
                 console.log('onSuccessSubmit=====')

@@ -130,8 +130,7 @@ export default {
   checkboxTickColor: '#fff',
 
   // Color
-  // brandPrimary: platform === PLATFORM.IOS ? '#007aff' : '#3F51B5',
-  brandPrimary: platform === PLATFORM.IOS ? 'rgba(218,55,49,1)' : 'rgba(218,55,49,1)',
+  brandPrimary: platform === PLATFORM.IOS ? '#007aff' : '#3F51B5',
   brandInfo: '#62B1F6',
   brandSuccess: '#5cb85c',
   brandDanger: '#d9534f',
@@ -175,22 +174,17 @@ export default {
   activeTab: platform === PLATFORM.IOS ? '#007aff' : '#fff',
   sTabBarActiveTextColor: '#007aff',
   tabBarActiveTextColor: platform === PLATFORM.IOS ? '#2874F0' : '#fff',
-  tabActiveBgColor: platform === PLATFORM.IOS ? '#434343' : '#434343',
-  // tabActiveBgColor: platform === PLATFORM.IOS ? '#cde1f9' : '#3F51B5',
+  tabActiveBgColor: platform === PLATFORM.IOS ? '#cde1f9' : '#3F51B5',
 
   // Header
-  toolbarBtnColor: platform === PLATFORM.IOS ? '#fff' : '#fff',
-  // toolbarBtnColor: platform === PLATFORM.IOS ? '#007aff' : '#fff',
-  toolbarDefaultBg: platform === PLATFORM.IOS ? 'rgba(218,55,49,1)' : 'rgba(218,55,49,1)',
-  // toolbarDefaultBg: platform === PLATFORM.IOS ? '#F8F8F8' : '#3F51B5',
+  toolbarBtnColor: platform === PLATFORM.IOS ? '#007aff' : '#fff',
+  toolbarDefaultBg: platform === PLATFORM.IOS ? '#F8F8F8' : '#3F51B5',
   toolbarHeight: platform === PLATFORM.IOS ? 64 : 56,
   toolbarSearchIconSize: platform === PLATFORM.IOS ? 20 : 23,
-  toolbarInputColor: platform === PLATFORM.IOS ? '#fff' : '#fff',
-  // toolbarInputColor: platform === PLATFORM.IOS ? '#CECDD2' : '#fff',
+  toolbarInputColor: platform === PLATFORM.IOS ? '#CECDD2' : '#fff',
   searchBarHeight: platform === PLATFORM.IOS ? 30 : 40,
   searchBarInputHeight: platform === PLATFORM.IOS ? 30 : 50,
-  toolbarBtnTextColor: platform === PLATFORM.IOS ? '#fff' : '#fff',
-  // toolbarBtnTextColor: platform === PLATFORM.IOS ? '#007aff' : '#fff',
+  toolbarBtnTextColor: platform === PLATFORM.IOS ? '#007aff' : '#fff',
   iosStatusbar: 'dark-content',
   toolbarDefaultBorder: platform === PLATFORM.IOS ? '#a7a6ab' : '#3F51B5',
   get statusBarColor() {
@@ -271,8 +265,7 @@ export default {
   topTabBarActiveBorderColor: platform === PLATFORM.IOS ? '#007aff' : '#fff',
 
   // Tabs
-  // tabBgColor: '#F8F8F8',
-  tabBgColor: 'blue',
+  tabBgColor: '#F8F8F8',
   tabFontSize: 15,
 
   // Text
@@ -288,8 +281,7 @@ export default {
   titleFontSize: platform === PLATFORM.IOS ? 17 : 19,
   subTitleFontSize: platform === PLATFORM.IOS ? 11 : 14,
   subtitleColor: platform === PLATFORM.IOS ? '#000' : '#fff',
-  titleFontColor: platform === PLATFORM.IOS ? '#fff' : '#fff',
-  // titleFontColor: platform === PLATFORM.IOS ? '#000' : '#fff',
+  titleFontColor: platform === PLATFORM.IOS ? '#000' : '#fff',
 
   // Other
   borderRadiusBase: platform === PLATFORM.IOS ? 5 : 2,

@@ -29,45 +29,12 @@ const styles = {
 class ScreenHome extends Component {
   render () {
     return (
-      <Container>
-        {/* <Header style={{height: 1}}>
-          <StatusBar barStyle="light-content"/>
-          <Left />
-          <Body />
-          <Right />
-        </Header> */}
-        {/* <StatusBar translucent backgroundColor={'#c41f19'} /> */}
-        {/* {isIphoneX && <StyledStatusBar
-          translucent
-          backgroundColor={isIphoneX ? '#c41f19' : '#c41f19'}
-          barStyle='light-content'
-          StatusBarAnimation='fade'
-        />} */}
+      <Container style={{ backgroundColor: '#fff' }}>
         <ImageBackground source={Images.backgroundXpay} style={{ flex: 1, width: '100%' }}>
-          {
-            isIphoneX && (
-              <StyledStatusBar
-                translucent
-                backgroundColor={Colors.colorPrimaryDark}
-                barStyle='light-content'
-                StatusBarAnimation='fade'
-              />
-            )
-          }
-          {
-            !isIphoneX && (
-              <Header
-                iosBarStyle='light-content'
-                style={{ height: 0 }}
-              />)
-          }
+          <StatusBar barStyle='light-content' backgroundColor='rgba(218,55,49,1)' />
           <Content>
-            <View style={{ flex: 1 }}>
-              <UserProfile />
-            </View>
-            <View style={{ height: 300 }}>
-              <CardSwipe />
-            </View>
+            <UserProfile />
+            <CardSwipe style={{ margin: 5 }} />
           </Content>
         </ImageBackground>
         <Button block dark style={{ backgroundColor: Colors.colorPrimaryDark }} onPress={() => this.props.navigation.navigate('ScreenAddCard')}>
