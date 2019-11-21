@@ -1,11 +1,14 @@
 import '../Config'
 import React, { Component } from 'react'
 import { Provider } from 'react-redux'
+import codePush from 'react-native-code-push'
 import { StyleProvider } from 'native-base'
 import RootContainer from './RootContainer'
 import createStore from '../Redux'
 import getTheme from '../native-base-theme/components'
 import variables from '../native-base-theme/variables/commonColor'
+
+const codePushOptions = { checkFrequency: codePush.CheckFrequency.ON_APP_RESUME }
 
 // create our store
 const store = createStore()
@@ -30,4 +33,5 @@ class App extends Component {
     )
   }
 }
-export default App
+const MyApp = codePush(codePushOptions)(App)
+export default MyApp

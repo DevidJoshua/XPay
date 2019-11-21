@@ -17,3 +17,12 @@ react-native run-android
 ```bash
 ./gradlew app:assembleRelease
 ```
+
+### upload to appcenter
+
+```bash
+appcenter codepush release-react -a opetstudio/XPay-ios -d Staging
+```
+
+### codepush integration guide
+https://docs.microsoft.com/en-us/appcenter/distribution/codepush/react-native
