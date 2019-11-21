@@ -34,7 +34,7 @@ class FormAddCard extends Component {
               <Input style={{textAlign: 'right'}} placeholder='ex. 224' placeholderTextColor='#d3d3d3' />
             </Item> */}
         <Button primary disabled={this.props.addcardFormSubmitMSG.ir} block style={{ margin: 15 }} onPress={() => this.props.addcardFormSubmit({})}>
-          <Text>Add Card</Text>
+          <Text>Submit Card</Text>
         </Button>
         {this.props.addcardFormSubmitMSG.ir && <Spinner color='green' />}
       </Form>

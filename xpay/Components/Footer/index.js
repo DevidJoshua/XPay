@@ -78,7 +78,7 @@ class FooterComponent extends Component {
   render () {
     const showCreateQr = false
     return (
-      <Footer>
+      <Footer style={{ height: 60 }}>
         <FooterTab>
           {showCreateQr && <Button
             // active={this.state.tab1}

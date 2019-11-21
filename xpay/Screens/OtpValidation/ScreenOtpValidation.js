@@ -35,7 +35,7 @@ class ScreenOtpValidation extends Component {
     return (
       <Container style={styles.container}>
         <ImageBackground source={Images.backgroundXpay} style={styles.backgroundImg}>
-          <Header style={{ backgroundColor: Colors.colorPrimaryDark }}>
+          <Header>
             <Left>
               <Button transparent onPress={() => this.props.navigation.goBack()}>
                 <Icon name='arrow-back' />
@@ -46,11 +46,11 @@ class ScreenOtpValidation extends Component {
             </Body>
             <Right />
           </Header>
-          <Content padding contentContainerStyle={{ flex: 1, justifyContent: 'flex-end', padding: 10 }}>
+          <Content contentContainerStyle={{ flex: 1, justifyContent: 'flex-end', padding: 10 }}>
             <FormOtpvalidation
               onSuccessSubmit={() => {
                 console.log('onSuccessSubmit=====')
-                this.props.navigation.navigate('ScreenSuccessBind')
+                this.props.navigation.replace('ScreenSuccessBind')
               }}
             />
           </Content>

@@ -7,10 +7,10 @@ import {
   Right,
   Body,
   Text,
-  Button
+  Button,
+  Icon
 } from 'native-base'
-import { ImageBackground, View, StatusBar } from 'react-native'
-import { isIphoneX } from '../../Lib/helper/platform'
+import { ImageBackground, View, StatusBar, Platform } from 'react-native'
 import StyledStatusBar from '../../Containers/StyledStatusBar'
 import CardSwipe from './CardSwipe'
 import Footer from '../../Containers/Footer'
@@ -31,15 +31,24 @@ class ScreenHome extends Component {
     return (
       <Container style={{ backgroundColor: '#fff' }}>
         <ImageBackground source={Images.backgroundXpay} style={{ flex: 1, width: '100%' }}>
-          <StatusBar barStyle='light-content' backgroundColor='rgba(218,55,49,1)' />
+          {Platform.OS === 'android' && <StatusBar barStyle='light-content' backgroundColor='rgba(218,55,49,1)' />}
+          {Platform.OS === 'ios' &&
+            <StyledStatusBar
+              translucent
+              backgroundColor='rgba(218,55,49,1)'
+              barStyle='light-content'
+              StatusBarAnimation='fade'
+            />}
           <Content>
             <UserProfile />
             <CardSwipe style={{ margin: 5 }} />
+            <Button rounded success style={{ width: 120, alignSelf: 'center' }} onPress={() => this.props.navigation.navigate('ScreenAddCard')}>
+              <Icon name='add' style={{ marginRight: 0 }} />
+              <Text style={{ paddingLeft: 0, marginLeft: 10 }}>Add Card</Text>
+            </Button>
           </Content>
         </ImageBackground>
-        <Button block dark style={{ backgroundColor: Colors.colorPrimaryDark }} onPress={() => this.props.navigation.navigate('ScreenAddCard')}>
-          <Text>Add Card</Text>
-        </Button>
+        
         <Footer />
       </Container>
     )

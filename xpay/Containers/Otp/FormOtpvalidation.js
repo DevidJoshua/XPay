@@ -42,7 +42,7 @@ class FormOtpvalidation extends Component {
           {/* <Label>OTP</Label> */}
           <Input style={{ textAlign: 'center' }} placeholder='ex. 123456' placeholderTextColor='#d3d3d3' />
         </Item>
-        <Button block style={{ margin: 15, backgroundColor: Colors.colorPrimaryDark }} onPress={() => this.props.otpvalidationFormSubmit({})}>
+        <Button block style={{ margin: 15 }} onPress={() => this.props.otpvalidationFormSubmit({})}>
           <Text>Submit OTP</Text>
         </Button>
         {this.props.otpvalidationFormSubmitMSG.ir && <Spinner color='green' />}

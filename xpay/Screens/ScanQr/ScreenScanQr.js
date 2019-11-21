@@ -7,7 +7,8 @@ import {
   StatusBar,
   Linking,
   View,
-  ImageBackground
+  ImageBackground,
+  Platform
 } from 'react-native'
 import {
   Container,
@@ -39,66 +40,70 @@ class ScreenScanQr extends Component {
       ScanResult: false,
       result: null,
       cameraGranted: false,
-      photoLibraryGranted: false,
+      photoLibraryGranted: false
     //   microphoneGranted: false
     }
   }
 
   componentWillMount () {
-    check(PERMISSIONS.IOS.CAMERA)
-      .then(result => {
-        switch (result) {
-          case RESULTS.UNAVAILABLE:
-            console.log('camere => This feature is not available (on this device / in this context)')
-            break
-          case RESULTS.DENIED:
-            console.log('camere => The permission has not been requested / is denied but requestable')
-            request(PERMISSIONS.IOS.CAMERA).then(result => {
-              console.log('result=======>', result)
+    if (Platform.OS === 'ios') {
+      check(PERMISSIONS.IOS.CAMERA)
+        .then(result => {
+          switch (result) {
+            case RESULTS.UNAVAILABLE:
+              console.log('camere => This feature is not available (on this device / in this context)')
+              break
+            case RESULTS.DENIED:
+              console.log('camere => The permission has not been requested / is denied but requestable')
+              request(PERMISSIONS.IOS.CAMERA).then(result => {
+                console.log('result=======>', result)
+                this.setState({cameraGranted: true })
+              })
+
+              break
+            case RESULTS.GRANTED:
+              console.log('camere => The permission is granted')
               this.setState({cameraGranted: true })
-            })
+              break
+            case RESULTS.BLOCKED:
+              console.log('camere => The permission is denied and not requestable anymore')
+              break
+          }
+        })
+        .catch(error => {
+          console.log('camere => error=====>', error)
+        // …
+        })
+      check(PERMISSIONS.IOS.MEDIA_LIBRARY)
+        .then(result => {
+          switch (result) {
+            case RESULTS.UNAVAILABLE:
+              console.log('photoLibrary => This feature is not available (on this device / in this context)')
+              break
+            case RESULTS.DENIED:
+              console.log('photoLibrary => The permission has not been requested / is denied but requestable')
+              request(PERMISSIONS.IOS.MEDIA_LIBRARY).then(result => {
+                console.log('photoLibrary =>  result=======>', result)
+                this.setState({ photoLibraryGranted: true })
+              })
 
-            break
-          case RESULTS.GRANTED:
-            console.log('camere => The permission is granted')
-            this.setState({cameraGranted: true })
-            break
-          case RESULTS.BLOCKED:
-            console.log('camere => The permission is denied and not requestable anymore')
-            break
-        }
-      })
-      .catch(error => {
-        console.log('camere => error=====>', error)
-      // …
-      })
-    check(PERMISSIONS.IOS.MEDIA_LIBRARY)
-      .then(result => {
-        switch (result) {
-          case RESULTS.UNAVAILABLE:
-            console.log('photoLibrary => This feature is not available (on this device / in this context)')
-            break
-          case RESULTS.DENIED:
-            console.log('photoLibrary => The permission has not been requested / is denied but requestable')
-            request(PERMISSIONS.IOS.MEDIA_LIBRARY).then(result => {
-              console.log('photoLibrary =>  result=======>', result)
-              this.setState({ photoLibraryGranted: true })
-            })
-
-            break
-          case RESULTS.GRANTED:
-            console.log('photoLibrary => The permission is granted')
-            this.setState({photoLibraryGranted: true })
-            break
-          case RESULTS.BLOCKED:
-            console.log('photoLibrary => The permission is denied and not requestable anymore')
-            break
-        }
-      })
-      .catch(error => {
-        console.log('photoLibrary => error=====>', error)
-      // …
-      })
+              break
+            case RESULTS.GRANTED:
+              console.log('photoLibrary => The permission is granted')
+              this.setState({photoLibraryGranted: true })
+              break
+            case RESULTS.BLOCKED:
+              console.log('photoLibrary => The permission is denied and not requestable anymore')
+              break
+          }
+        })
+        .catch(error => {
+          console.log('photoLibrary => error=====>', error)
+        })
+    } else {
+      // this.state.cameraGranted && this.state.photoLibraryGranted
+      this.setState({ cameraGranted: true, photoLibraryGranted: true })
+    }
     // check(PERMISSIONS.IOS.MICROPHONE)
     //   .then(result => {
     //     switch (result) {
@@ -128,7 +133,7 @@ class ScreenScanQr extends Component {
     //   })
   }
 
-    onSuccess = (e) => {
+    handleOnSuccess = (e) => {
       const check = e.data.substring(0, 4)
       console.log('scanned data' + check)
       this.setState({
@@ -166,14 +171,14 @@ class ScreenScanQr extends Component {
     }
 
     render () {
-        console.log('state=====>', this.state)
+      console.log('state=====>', this.state)
       const textMessage = I18n.t
       const { scan, ScanResult, result } = this.state
       const desccription = 'QR code (abbreviated from Quick Response Code) is the trademark for a type of matrix barcode (or two-dimensional barcode) first designed in 1994 for the automotive industry in Japan. A barcode is a machine-readable optical label that contains information about the item to which it is attached. In practice, QR codes often contain data for a locator, identifier, or tracker that points to a website or application. A QR code uses four standardized encoding modes (numeric, alphanumeric, byte/binary, and kanji) to store data efficiently; extensions may also be used.'
       return (
-        <Container style={styles.container}>
-          <StatusBar translucent backgroundColor='#eb1c24' />
-          <Header transparent>
+        <Container>
+          <Header>
+            <StatusBar barStyle='light-content' />
             <Left>
               <Button transparent onPress={() => this.props.navigation.goBack()}>
                 <Icon name='arrow-back' />
@@ -184,16 +189,15 @@ class ScreenScanQr extends Component {
             </Body>
             <Right />
           </Header>
-          <Content style={{}}>
-            <View style={{ flex: 1 }}>
-              {(this.state.cameraGranted && this.state.photoLibraryGranted) && <QRCodeScanner
+          <Content>
+            {(this.state.cameraGranted && this.state.photoLibraryGranted) &&
+              <QRCodeScanner
                 reactivate
                 showMarker
                 ref={(node) => { this.scanner = node }}
-                onRead={this.onSuccess}
-                style={{ flex: 1, width: 100 }}
+                onRead={this.handleOnSuccess}
+                cameraStyle={{ backgroundColor: 'yellow', alignSelf: 'center', height: 300, maxWidth: 300 }}
               />}
-            </View>
           </Content>
         </Container>
 

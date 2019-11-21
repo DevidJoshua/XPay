@@ -95,7 +95,7 @@ export default class ScreenTransactionDetail extends Component {
             <Row style={{ height: 200 }}>
               <FormPinValidation
                 onSuccessSubmit={() => {
-                  this.props.navigation.navigate('ScreenSuccessBind')
+                  this.props.navigation.replace('ScreenSuccessBind')
                 }}
               />
             </Row>

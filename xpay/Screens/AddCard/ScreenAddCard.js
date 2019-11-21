@@ -60,7 +60,6 @@ class ScreenAddCard extends Component {
             </Body>
             <Right />
           </Header>
-          {/* <Content padding> */}
           {/* <Row style={{backgroundColor: 'yellow'}} /> */}
           <Content contentContainerStyle={{ flex: 1, justifyContent: 'flex-end', padding: 10 }}>
             <FormAddCard
