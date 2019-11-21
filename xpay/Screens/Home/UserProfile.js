@@ -45,7 +45,7 @@ export default class UserProfile extends Component {
           this.state.showSaldo && (
             <TouchableOpacity style={styles.iconStack} onPress={this.handleToggleShowSaldo}>
               <Text style={styles.text2}>My wallet</Text>
-              <Text style={styles.text3}>IDR 900,000</Text>
+              <Text style={styles.text3}>IDR 950,000</Text>
             </TouchableOpacity>
           )
         }
