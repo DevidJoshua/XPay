@@ -21,7 +21,10 @@ react-native run-android
 ### upload to appcenter
 
 ```bash
+# ios
 appcenter codepush release-react -a opetstudio/XPay-ios -d Staging
+# android
+appcenter codepush release-react -a opetstudio/XPay-android -d Staging
 ```
 
 ### codepush integration guide
