@@ -186,7 +186,7 @@ class ScreenScanQr extends Component {
               </Button>
             </Left>
             <Body>
-              <Title>Scan QR Code</Title>
+              <Title>Scan QR</Title>
             </Body>
             <Right />
           </Header>
