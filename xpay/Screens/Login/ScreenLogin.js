@@ -65,7 +65,7 @@ class ScreenLogin extends React.Component {
             <View style={{ marginTop: 80 }}>
               <View style={styles.centered}>
                 <TextInput
-                                    style={styles.inputBox}
+                  style={styles.inputBox}
                   placeholder='Email'
                   underlineColorAndroid='rgba(0,0,0,0.5)'
                   selectionColor='#000'
@@ -74,7 +74,7 @@ class ScreenLogin extends React.Component {
                   textAlign='center'
                 />
                 <TextInput
-                                    style={styles.inputBox}
+                  style={styles.inputBox}
                   placeholder='Password'
                   underlineColorAndroid='rgba(0,0,0,0.5)'
                   selectionColor='#000'

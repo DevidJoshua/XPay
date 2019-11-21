@@ -42,14 +42,20 @@ export default class ScreenSingup extends Component {
             </Body>
             <Right />
           </Header>
-          <Content padding contentContainerStyle={{ flex: 1, justifyContent: 'flex-end', padding: 10 }}>
+          {/* <Content padder contentContainerStyle={{ flex: 1, justifyContent: 'flex-end', padding: 10 }}>
             <FormSignup
               onSuccessSubmit={() => {
                 this.props.navigation.navigate('ScreenSuccessBind')
               }}
             />
             />
-          </Content>
+          </Content> */}
+          <FormSignup
+              onSuccessSubmit={() => {
+                this.props.navigation.navigate('ScreenSuccessBind')
+              }}
+          />
+          
         </ImageBackground>
       </Container>
     )
