@@ -135,6 +135,7 @@ class ScreenTransactionConfirmation extends Component {
                 </ListItem>}
             />
           </View>
+          <Text style={{ alignSelf: 'center', margin: 15 }}>==== Thank You ====</Text>
         </Content>
       </Container>
     )

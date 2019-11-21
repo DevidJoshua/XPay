@@ -1,11 +1,8 @@
 import React, { Component } from 'react'
-import { StyleSheet, View, ScrollView, Image, ImageBackground } from 'react-native'
+import { View, ImageBackground } from 'react-native'
 import { Container, Header, Left, Button, Icon, Body, Text, Title, Right, Content } from 'native-base'
-import { Grid, Row } from 'react-native-easy-grid'
 // import Icon from 'react-native-vector-icons/MaterialCommunityIcons'
-import MaterialFixedLabelTextbox from '../../Components/InputText/MaterialFixedLabelTextbox'
-import MaterialButtonViolet from '../../Components/Button/MaterialButtonViolet'
-import { Images, Colors, Metrics } from '../../Themes'
+import { Images } from '../../Themes'
 import FormSignup from '../../Containers/Signup/FormSignup'
 
 export default class ScreenSingup extends Component {
