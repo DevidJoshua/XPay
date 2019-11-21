@@ -30,7 +30,7 @@ class FormOtpvalidation extends Component {
 
   componentDidUpdate (prevProps) {
     if (!this.props.otpvalidationFormSubmitMSG.ir && this.props.otpvalidationFormSubmitMSG.rc === '00') {
-      this.props.onSuccessSubmit()
+      this.props.navigation.replace('ScreenSuccessBind')
     }
   }
 

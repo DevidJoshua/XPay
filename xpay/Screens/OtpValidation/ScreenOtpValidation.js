@@ -48,10 +48,7 @@ class ScreenOtpValidation extends Component {
           </Header>
           <Content contentContainerStyle={{ flex: 1, justifyContent: 'flex-end', padding: 10 }}>
             <FormOtpvalidation
-              onSuccessSubmit={() => {
-                console.log('onSuccessSubmit=====')
-                this.props.navigation.replace('ScreenSuccessBind')
-              }}
+              navigation={this.props.navigation}
             />
           </Content>
         </ImageBackground>

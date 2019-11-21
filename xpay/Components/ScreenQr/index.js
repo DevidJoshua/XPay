@@ -10,7 +10,7 @@ export default class Untitled2 extends Component {
         <ImageBackground source={require('../../Images/bg/bgrayapay1.png')} style={{width: '100%', height: '100%'}}>
           <Center>
             <View style={styles.rect} />
-            <Icon onPress={() => this.props.navigation.navigate('ScreenDashboard')}
+            <Icon onPress={() => this.props.navigation.navigate('DrawerMenuNavigator')}
               name='arrow-left'
               style={styles.icon}
         />

@@ -65,7 +65,7 @@ class ScreenAddCard extends Component {
             <FormAddCard
               onSuccessSubmit={() => {
                 console.log('onSuccessSubmit=====')
-                this.props.navigation.navigate('ScreenOtpValidation')
+                this.props.navigation.replace('ScreenOtpValidation')
               }}
             />
           </Content>

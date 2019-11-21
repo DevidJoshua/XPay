@@ -79,6 +79,7 @@ class ScreenScanQr extends Component {
           switch (result) {
             case RESULTS.UNAVAILABLE:
               console.log('photoLibrary => This feature is not available (on this device / in this context)')
+              this.setState({ photoLibraryGranted: true })
               break
             case RESULTS.DENIED:
               console.log('photoLibrary => The permission has not been requested / is denied but requestable')
@@ -189,14 +190,14 @@ class ScreenScanQr extends Component {
             </Body>
             <Right />
           </Header>
-          <Content>
+          <Content contentContainerStyle={{ justifyContent: 'center', flex: 1 }}>
             {(this.state.cameraGranted && this.state.photoLibraryGranted) &&
               <QRCodeScanner
                 reactivate
                 showMarker
                 ref={(node) => { this.scanner = node }}
                 onRead={this.handleOnSuccess}
-                cameraStyle={{ backgroundColor: 'yellow', alignSelf: 'center', height: 300, maxWidth: 300 }}
+                cameraStyle={{ backgroundColor: 'yellow', height: 300, maxWidth: 300, alignSelf: 'center' }}
               />}
           </Content>
         </Container>

@@ -32,7 +32,7 @@ class FormSignup extends Component {
           {/* <Label floatingLabel>Email or Phone Number</Label> */}
           <Input style={{ textAlign: 'center' }} placeholder='ex. 123456' placeholderTextColor='#d3d3d3' />
         </Item>
-        <Button block style={{ margin: 15, backgroundColor: Colors.colorPrimaryDark }} onPress={() => this.props.signupFormSubmit({})}>
+        <Button block style={{ margin: 15 }} onPress={() => this.props.signupFormSubmit({})}>
           <Text>Submit</Text>
         </Button>
         {this.props.signupFormSubmitMSG.ir && <Spinner color='green' />}

@@ -5,7 +5,7 @@ import { withNavigation } from 'react-navigation'
 class MaterialButtonViolet1 extends Component {
   render() {
     return (
-      <TouchableOpacity style={[styles.container, this.props.style]} onPress={() => this.props.navigation.navigate('ScreenHome')}>
+      <TouchableOpacity style={[styles.container, this.props.style]} onPress={() => this.props.navigation.navigate('DrawerMenuNavigator')}>
         <Text style={styles.caption}>Sign In</Text>
       </TouchableOpacity>
     );

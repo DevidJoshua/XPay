@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { StyleSheet, View, ScrollView, Image, Text, ImageBackground } from 'react-native'
-import { Container, Header, Left, Button, Icon, Body, Title, Right, Content, FormOtpvalidation } from 'native-base'
+import { Container, Header, Left, Button, Icon, Body, Title, Right, Content } from 'native-base'
 import { Grid, Row } from 'react-native-easy-grid'
 // import Icon from 'react-native-vector-icons/MaterialCommunityIcons'
 import MaterialFixedLabelTextbox from '../../Components/InputText/MaterialFixedLabelTextbox'
@@ -59,82 +59,3 @@ export default class ScreenSingup extends Component {
     )
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    backgroundColor: '#fff'
-  },
-  backgroundImg: {
-    flex: 1,
-    width: Metrics.screenWidth
-  },
-  rect: {
-    width: '100%',
-    height: 56,
-    backgroundColor: '#eb1c24'
-  },
-  iconBack: {
-    color: 'rgba(255,255,255,1)',
-    fontSize: 35,
-    height: 40,
-    width: 40,
-    marginTop: 7,
-    marginLeft: 10
-  },
-  text: {
-    top: 12,
-    left: 60,
-    color: 'rgba(255,255,255,1)',
-    position: 'absolute',
-    fontSize: 20
-  },
-  TextboxEmail: {
-    width: 350,
-    height: 59,
-    backgroundColor: 'rgba(230, 230, 230,1)',
-    borderRadius: 5,
-    alignSelf: 'center',
-    marginTop: 26
-  },
-  TextboxFullname: {
-    width: 350,
-    height: 59,
-    backgroundColor: 'rgba(230, 230, 230,1)',
-    borderRadius: 5,
-    alignSelf: 'center',
-    marginTop: 13
-  },
-  TextboxNoID: {
-    width: 350,
-    height: 59,
-    backgroundColor: 'rgba(230, 230, 230,1)',
-    borderRadius: 5,
-    alignSelf: 'center',
-    marginTop: 14
-  },
-  TextboxAddress: {
-    width: 350,
-    height: 142,
-    backgroundColor: 'rgba(255,255,255,1)',
-    borderRadius: 5,
-    alignSelf: 'center',
-    marginTop: 13
-  },
-  TextboxNoHP: {
-    width: 350,
-    height: 59,
-    backgroundColor: 'rgba(230, 230, 230,1)',
-    borderRadius: 5,
-    alignSelf: 'center',
-    marginTop: 12
-  },
-  ButtonVioletSignUp: {
-    // width: 350,
-    // height: 59,
-    // backgroundColor: '#eb1c24',
-    // borderRadius: 5,
-    // alignSelf: 'center',
-    // marginTop: 24
-  },
-  statusBar: {}
-})

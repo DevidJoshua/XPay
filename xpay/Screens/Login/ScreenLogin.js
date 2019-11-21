@@ -61,15 +61,15 @@ class ScreenLogin extends React.Component {
         <ImageBackground source={Images.backgroundXpay} style={{ width: '100%', height: '100%' }}>
           <Content padder>
             <View style={{ margin: 30, alignItems: 'center' }}>
-              <Image source={Images.logoBayar2} style={styles.logo} />
+              {/* <Image source={Images.logoBayar2} style={styles.logo} /> */}
             </View>
             {/* <View style={{ flex: 1, marginTop: 50, alignItems: 'center' }}> */}
             <Form>
               <Item>
-                <Input placeholder="Username" style={{ textAlign: 'center' }} onChangeText={(v) => this.setState({ userid: v })} keyboardType='email-address' />
+                <Input placeholder='Username' style={{ textAlign: 'center' }} onChangeText={(v) => this.setState({ userid: v })} keyboardType='email-address' />
               </Item>
               <Item>
-                <Input placeholder="Password" secureTextEntry style={{ textAlign: 'center' }} onChangeText={(v) => this.setState({ password: v })} />
+                <Input placeholder='Password' secureTextEntry style={{ textAlign: 'center' }} onChangeText={(v) => this.setState({ password: v })} />
               </Item>
               <Button block style={{ margin: 15, marginTop: 50 }} onPress={() => this._doLogin()}>
                 <Text>Sign In</Text>

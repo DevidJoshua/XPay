@@ -10,7 +10,7 @@ export default class Untitled5 extends Component {
       <View style={styles.root}>
         <Center>
           <View style={styles.rect} />
-          <Icon onPress={() => this.props.navigation.navigate('ScreenDashboard')}
+          <Icon onPress={() => this.props.navigation.navigate('DrawerMenuNavigator')}
             name='arrow-left'
             style={styles.icon}
         />
