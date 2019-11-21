@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import { StyleSheet, View, ScrollView, Image, Text, ImageBackground } from 'react-native'
-import { Container, Header, Left, Button, Icon, Body, Title, Right, Content } from 'native-base'
+import { StyleSheet, View, ScrollView, Image, ImageBackground } from 'react-native'
+import { Container, Header, Left, Button, Icon, Body, Text, Title, Right, Content } from 'native-base'
 import { Grid, Row } from 'react-native-easy-grid'
 // import Icon from 'react-native-vector-icons/MaterialCommunityIcons'
 import MaterialFixedLabelTextbox from '../../Components/InputText/MaterialFixedLabelTextbox'
@@ -51,7 +51,15 @@ export default class ScreenSingup extends Component {
               )
             }
             {this.state.formSent && (
-              <Text>Success submit</Text>
+              <View style={{ justifyContent: 'center', flex: 1, alignItems: 'center' }}>
+                <Icon
+                  style={{ fontSize: 200, color: 'green' }}
+                  type='Ionicons'
+                  name='md-checkmark-circle-outline'
+                />
+                <Text style={{ margin: 10, textAlign: 'center' }}>Check your username and password in your email or message inbox</Text>
+                <Button onPress={() => this.props.navigation.replace('ScreenLogin')}><Text>OK</Text></Button>
+              </View>
             )}
           </Content>
         </ImageBackground>

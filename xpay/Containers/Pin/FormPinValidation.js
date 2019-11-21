@@ -1,5 +1,5 @@
 
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import {
   Container,
@@ -18,11 +18,11 @@ import {
   Text,
   DatePicker,
   Spinner
-} from 'native-base';
+} from 'native-base'
 import _ from 'lodash'
 import SessionAction, { SessionSelectors } from '../../Redux/SessionRedux'
 import { Colors } from '../../Themes'
-import {withNavigation} from 'react-navigation'
+import { withNavigation } from 'react-navigation'
 
 class FormPinValidation extends Component {
   componentWillMount () {
@@ -37,19 +37,17 @@ class FormPinValidation extends Component {
 
   render () {
     return (
-      <Content padder>
-        <Form>
-          <Text style={{ alignSelf: 'center', marginBottom: 10 }}>INPUT PIN TO CONFIRM</Text>
-          <Item fixedLabel regular>
-            {/* <Label>OTP</Label> */}
-            <Input secureTextEntry style={{ textAlign: 'center' }} placeholder='ex. 123456' placeholderTextColor='#d3d3d3' />
-          </Item>
-        </Form>
-        <Button block style={{ margin: 15, backgroundColor: Colors.colorPrimaryDark }} onPress={() => this.props.navigation.replace('ScreenTransactionStatus')}>
+      <Form style={[this.props.style]}>
+        <Text style={{ alignSelf: 'center', marginBottom: 10 }}>PIN</Text>
+        <Item fixedLabel regular>
+          {/* <Label>OTP</Label> */}
+          <Input secureTextEntry style={{ textAlign: 'center' }} placeholder='ex. 123456' placeholderTextColor='#d3d3d3' />
+        </Item>
+        <Button block style={{ margin: 15 }} onPress={() => this.props.navigation.replace('ScreenTransactionStatus')}>
           <Text>PAY</Text>
         </Button>
         {/* {this.props.otpvalidationFormSubmitMSG.ir && <Spinner color='green' />} */}
-      </Content>
+      </Form>
     )
   }
 }

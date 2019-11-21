@@ -82,21 +82,11 @@ class ScreenTransactionConfirmation extends Component {
             </Button>
           </Left>
           <Body>
-            <Title>Status</Title>
+            <Title>Confirmation</Title>
           </Body>
           <Right />
         </Header>
         <Content style={{}} contentContainerStyle={{ margin: 10 }}>
-          <View style={{ justifyContent: 'center', flex: 1, alignItems: 'center', padding: 10, marginTop: 10, marginBottom: 20, borderColor: '#000', borderWidth: 3, borderRadius: 20 }}>
-            <Icon
-              style={{ fontSize: 200, color: 'green', alignSelf: 'center' }}
-              type='Ionicons'
-              name='md-checkmark-circle-outline'
-            />
-            <Text style={{ margin: 10, fontSize: 24, textAlign: 'center' }}>Transaction Success</Text>
-            <Text style={{ textAlign: 'center' }}>Total Amount: Rp 382.000</Text>
-            <Button onPress={() => this.props.navigation.replace('DrawerMenuNavigator')} style={{ margin: 10 }}><Text>OK</Text></Button>
-          </View>
           <Text style={{ alignSelf: 'center', margin: 5 }}>Transaction Detail</Text>
           <View style={{ backgroundColor: 'white' }}>
             <List
@@ -133,6 +123,14 @@ class ScreenTransactionConfirmation extends Component {
                         </Text>
                         </Right> */}
                 </ListItem>}
+            />
+          </View>
+          <View style={{ padding: 10, marginTop: 10, marginBottom: 20, borderColor: '#000', borderWidth: 3, borderRadius: 20 }}>
+            <Text style={{ textAlign: 'center' }}>Total Amount: Rp 382.000</Text>
+            <FormPinValidation
+              onSuccessSubmit={() => {
+                //   this.props.navigation.replace('ScreenSuccessBind')
+              }}
             />
           </View>
         </Content>

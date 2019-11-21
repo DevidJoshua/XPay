@@ -153,7 +153,7 @@ class ScreenScanQr extends Component {
           ScanResult: true
         })
       }
-      this.props.navigation.replace('ScreenTransactionDetail')
+      this.props.navigation.replace('ScreenTransactionConfirmation')
     }
 
 

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import {
   Container,
   Content,
@@ -10,39 +10,10 @@ import {
   Right,
   Text,
   Icon
-} from 'native-base';
-import { ImageBackground, View, Image, StatusBar } from 'react-native'
-import { isIphoneX } from '../../Lib/helper/platform'
-import StyledStatusBar from '../../Containers/StyledStatusBar'
-import { Center } from '@builderx/utils'
-// import Icon from '@builderx/icons'
-import Footer from '../../Containers/Footer'
-import { Images, Metrics, Colors } from '../../Themes'
+} from 'native-base'
+import { Image } from 'react-native'
+import { Images } from '../../Themes'
 
-const styles = {
-  container: {
-    backgroundColor: '#eb1c24'
-  },
-  backgroundImg: {
-    flex: 1,
-    width: Metrics.screenWidth
-  },
-  icon2: {
-    color: 'rgba(255,255,255,1)',
-    fontSize: 35
-  },
-  images: {
-    color: 'rgba(0,0,0,1)',
-    width: '100%',
-    marginTop: 40
-  },
-  text2: {
-    color: 'rgba(255,255,255,1)',
-    fontSize: 30,
-    alignSelf: 'center',
-    marginTop: 30
-  }
-}
 class ScreenShowqr extends Component {
   render () {
     return (

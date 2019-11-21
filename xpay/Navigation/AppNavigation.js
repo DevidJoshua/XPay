@@ -11,7 +11,7 @@ import ScreenHome from '../Screens/Home/ScreenHome'
 import ScreenSignup from '../Screens/Signup/ScreenSignup'
 import ScreenShowqr from '../Screens/Showqr/ScreenShowqr'
 import ScreenScanQr from '../Screens/ScanQr/ScreenScanQr'
-import ScreenTransactionDetail from '../Screens/TransactionDetail/ScreenTransactionDetail'
+import ScreenTransactionConfirmation from '../Screens/TransactionConfirmation/ScreenTransactionConfirmation'
 import ScreenAuthentication from '../Screens/Authentication/ScreenAuthentication'
 import ScreenTransactionStatus from '../Screens/TransactionStatus/ScreenTransactionStatus'
 import ScreenSuccessBind from '../Screens/SuccessBind/ScreenSuccessBind'
@@ -44,7 +44,7 @@ const loggedinNavigator = StackNavigator({
   ScreenDashboard: { screen: ScreenHome },
   ScreenQr: { screen: ScreenQr },
   ScreenShowqr: { screen: ScreenShowqr },
-  ScreenTransactionDetail: { screen: ScreenTransactionDetail },
+  ScreenTransactionConfirmation: { screen: ScreenTransactionConfirmation },
   ScreenOtpValidation: { screen: ScreenOtpValidation },
   ScreenScanQr: { screen: ScreenScanQr },
   ScreenTransactionsuccess: { screen: ScreenTransactionsuccess },
