@@ -1,6 +1,5 @@
 import React from 'react'
 import { createStackNavigator as StackNavigator, createDrawerNavigator as DrawerNavigator, createSwitchNavigator } from 'react-navigation'
-import Drawer from '../Containers/Drawer'
 import navigatorHelper from '../Lib/helper/navigator'
 import { isIphoneX } from '../Lib/helper/platform'
 
@@ -15,13 +14,6 @@ import ScreenTransactionConfirmation from '../Screens/TransactionConfirmation/Sc
 import ScreenAuthentication from '../Screens/Authentication/ScreenAuthentication'
 import ScreenTransactionStatus from '../Screens/TransactionStatus/ScreenTransactionStatus'
 import ScreenSuccessBind from '../Screens/SuccessBind/ScreenSuccessBind'
-// import ScreenHome from '../Components/ScreenHome'
-// import ScreenHome from '../Containers/ScreenHome'
-import ScreenQr from '../Components/ScreenQr'
-import ScreenTransactionsuccess from '../Components/ScreenTransactionsuccess'
-import ScreenScanThisQR from '../Components/ScreenScanThisQR'
-import ScreenAmount from '../Components/ScreenAmount'
-import ScreenEmailconfirm from '../Components/ScreenEmailconfirm'
 
 import styles from './Styles/NavigationStyles'
 
@@ -36,20 +28,16 @@ const DrawerMenuNavigator = DrawerNavigator(menuRoutes, {
   initialRouteName: 'ScreenHome',
   navigationOptions: {
     headerStyle: styles.header
-  },
-  contentComponent: props => <Drawer {...props} />
+  }
+  // contentComponent: props => <Drawer {...props} />
 })
 const loggedinNavigator = StackNavigator({
   DrawerMenuNavigator: { screen: DrawerMenuNavigator },
   ScreenDashboard: { screen: ScreenHome },
-  ScreenQr: { screen: ScreenQr },
   ScreenShowqr: { screen: ScreenShowqr },
   ScreenTransactionConfirmation: { screen: ScreenTransactionConfirmation },
   ScreenOtpValidation: { screen: ScreenOtpValidation },
   ScreenScanQr: { screen: ScreenScanQr },
-  ScreenTransactionsuccess: { screen: ScreenTransactionsuccess },
-  ScreenScanThisQR: { screen: ScreenScanThisQR },
-  ScreenAmount: { screen: ScreenAmount },
   ScreenSuccessBind: { screen: ScreenSuccessBind },
   ScreenAddCard: { screen: ScreenAddCard },
   ScreenTransactionStatus: { screen: ScreenTransactionStatus }
@@ -64,8 +52,7 @@ const loggedinNavigator = StackNavigator({
 })
 const unloggedinNavigator = StackNavigator({
   ScreenLogin: { screen: ScreenLogin },
-  ScreenSignup: { screen: ScreenSignup },
-  ScreenEmailconfirm: { screen: ScreenEmailconfirm }
+  ScreenSignup: { screen: ScreenSignup }
 }, {
   // Default config for all screens
   headerMode: 'none',

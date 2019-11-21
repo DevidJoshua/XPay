@@ -93,8 +93,8 @@ class FooterComponent extends Component {
           </Button>}
           <Button
             // active={this.state.tab2}
-            onPress={() => this.props.navigation.navigate('ScreenScanQr')}
-            // onPress={() => this.props.navigation.navigate('ScreenTransactionConfirmation')}
+            // onPress={() => this.props.navigation.navigate('ScreenScanQr')}
+            onPress={() => this.props.navigation.navigate('ScreenTransactionConfirmation')}
           >
             {/* <Icon active={this.state.tab2} name='camera' /> */}
             <Image source={Images.scan} style={{ height: 35, resizeMode: 'contain' }} />
