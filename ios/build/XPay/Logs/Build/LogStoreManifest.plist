@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>10</integer>
+	<key>logs</key>
+	<dict>
+		<key>89B0427D-3776-4F0F-859E-C1DB8864C184</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>89B0427D-3776-4F0F-859E-C1DB8864C184.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>XPay project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>XPay</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Building workspace XPay with scheme XPay and configuration Debug</string>
+			<key>timeStartedRecording</key>
+			<real>596083312.71166205</real>
+			<key>timeStoppedRecording</key>
+			<real>596083316.34259701</real>
+			<key>title</key>
+			<string>Building workspace XPay with scheme XPay and configuration Debug</string>
+			<key>uniqueIdentifier</key>
+			<string>89B0427D-3776-4F0F-859E-C1DB8864C184</string>
+		</dict>
+		<key>BAFBE82E-5233-42C3-BBA2-A9919A96C678</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>BAFBE82E-5233-42C3-BBA2-A9919A96C678.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>XPay project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>XPay</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Building workspace XPay with scheme XPay and configuration Debug</string>
+			<key>timeStartedRecording</key>
+			<real>596083595.70099401</real>
+			<key>timeStoppedRecording</key>
+			<real>596083598.46287203</real>
+			<key>title</key>
+			<string>Building workspace XPay with scheme XPay and configuration Debug</string>
+			<key>uniqueIdentifier</key>
+			<string>BAFBE82E-5233-42C3-BBA2-A9919A96C678</string>
+		</dict>
+	</dict>
+</dict>
+</plist>
