@@ -1,4 +1,4 @@
-#Fri Nov 22 12:31:11 WIB 2019
+#Mon Nov 25 09:25:07 WIB 2019
 base.0=/Users/rayakurayasem/Dejo/Rayapay/Project-Rp/android/app/build/intermediates/transforms/dexMerger/debug/0
 path.0=classes.dex
 renamed.0=classes.dex
