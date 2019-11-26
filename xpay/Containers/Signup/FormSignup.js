@@ -17,13 +17,44 @@ import {
 import SignupAction, { SignupSelectors } from './redux'
 import { Ficon,Colors } from '../../Themes'
 import { TextInput } from 'react-native-gesture-handler'
+import { thisExpression, stringLiteral } from '@babel/types'
 
 
 class FormSignup extends Component {
+  state={
+    alert_email:'',
+    alert_phone:'',
+    alert_color:'',
+    isDisabled:true
+  }
   componentWillMount () {
     this.props.signupPatch({ signupFormSubmitMSG: { ir: false, rc: '', rs: '', rd: '' } })
   }
-
+  _checkIsnumber(number){
+    var reg=/[0-9]/g;
+    if(!(reg.test(number))||number==""){
+        this.setState({alert_phone:'Make sure you input number'});
+        this.setState({alert_color:'#e30000'});
+        this.setState({isDisabled:true});  
+    }
+    else{
+      this.setState({alert_phone:'Phone valid'});
+      this.setState({alert_color:'#26c805'}); 
+      this.setState({isDisabled:false}); 
+    }
+  }
+  _checkIsemail(email){
+    if(!email.match(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/)||email==""){
+        this.setState({alert_email:'Email not valid'});
+        this.setState({alert_color:'#e30000'});
+        this.setState({isDisabled:true}); 
+    }
+    else{
+      this.setState({alert_email:'Email Valid'});
+      this.setState({alert_color:'#26c805'});
+      this.setState({isDisabled:false});   
+    }
+  }
   componentDidUpdate (prevProps) {
     if (!this.props.signupFormSubmitMSG.ir && this.props.signupFormSubmitMSG.rc === '00') {
       this.props.onSuccessSubmit()
@@ -46,26 +77,17 @@ class FormSignup extends Component {
             
             <Item rounded rounded style={styles.item}>
                 <Image source={Ficon.email} style={styles.ico}/>
-                <Input placeholder='Email' style={styles.input}/>
+                <Input placeholder='Email' style={styles.input} onChangeText={(el)=>this._checkIsemail(el)}/>
             </Item>
+            {/* alert */}
+          <Text  style={[styles.alert,{color:this.state.alert_color}]}>{this.state.alert_email}</Text>
             <Item rounded style={styles.item}>
-                <Image source={Ficon.user} style={styles.ico}/>
-                <Input placeholder='Fullname' style={styles.input}/>  
-            </Item>
-            <Item rounded style={styles.item}>
-                <Image source={Ficon.idcard} style={styles.ico}/>
-                <Input placeholder='No.ID.example: KTP, NIM, NIK' style={styles.input}/> 
-            </Item>
-              <Item rounded style={styles.item}>
-              <Image source={Ficon.location} style={styles.ico}/>
-                <Textarea rowSpan={5} placeholder={'Adress. ex.: Jl. Panjang no.2 '}
-                  />
-              </Item>
-              <Item rounded style={styles.item}>
               <Image source={Ficon.phone} style={styles.ico}/> 
-              <Input placeholder='Phone number' style={styles.input}/>  
-              </Item>
-            <Button block style={{ margin: 15, backgroundColor: Colors.colorPrimaryDark }} onPress={() => this.props.signupFormSubmit({})}>
+              <Input placeholder='Phone number' style={styles.input} keyboardType='numeric' onChangeText={(el)=>this._checkIsnumber(el)}/>  
+            </Item> 
+            {/* alert */}
+          <Text style={[styles.alert,{color:this.state.alert_color}]}>{this.state.alert_phone}</Text>
+            <Button disabled={this.state.isDisabled} block style={{ margin: 15, backgroundColor: Colors.colorPrimaryDark }} onPress={() => this.props.signupFormSubmit({})}>
               <Text>Submit</Text>
             </Button>
             {this.props.signupFormSubmitMSG.ir && <Spinner color='green' />}
@@ -90,6 +112,10 @@ const mapDispatchToProps = dispatch => {
 }
 
 const styles=StyleSheet.create({
+  alert:{
+    fontSize:15,
+    marginLeft:20
+  },
   item:{
     marginTop:10,
     // marginLeft:15,
@@ -110,14 +136,6 @@ const styles=StyleSheet.create({
     fontSize:19,
     color:'#555555',
     textAlign: 'left'
-  },
-  textarea:{
-    backgroundColor:'#e8e8e8',
-    fontSize:17,
-    marginHorizontal:10,
-    textAlignVertical: 'top',  // hack android
-    height: 170,
-    color: '#333',
   }
 });
 

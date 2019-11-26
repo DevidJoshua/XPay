@@ -40,15 +40,14 @@ class ScreenHome extends Component {
               StatusBarAnimation='fade'
             />}
           <Content>
-            <UserProfile />
+            <UserProfile/>
             <CardSwipe style={{ margin: 5 }} />
-            <Button rounded success style={{ width: 120, alignSelf: 'center' }} onPress={() => this.props.navigation.navigate('ScreenAddCard')}>
+            <Button rounded success style={{ marginBottom:10,width: 120, alignSelf: 'center' }} onPress={() => this.props.navigation.navigate('ScreenAddCard')}>
               <Icon name='add' style={{ marginRight: 0 }} />
               <Text style={{ paddingLeft: 0, marginLeft: 10 }}>Add Card</Text>
             </Button>
           </Content>
         </ImageBackground>
-        
         <Footer />
       </Container>
     )

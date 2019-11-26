@@ -5,6 +5,7 @@ import { Center } from '@builderx/utils'
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons'
 import { isIphoneX } from '../../Lib/helper/platform'
 import { Images } from '../../Themes'
+import {navigation} from 'react-navigation'
 
 export default class UserProfile extends Component {
   static propTypes = {
@@ -31,13 +32,16 @@ export default class UserProfile extends Component {
 
   render () {
     return (
-      <View style={[styles.container, this.props.style]}>
+      <View style={[styles.container, this.props.style]} onPress={() => this.props.navigation.navigate('ScreenShowqr')}>
         <Image
           source={Images.cardImage2}
           style={styles.image}
+          
         />
         {/* <Center horizontal> */}
-        <Text style={styles.text}>Nofrets Poai</Text>
+        <Text
+        onPress={() => this.props.navigation.navigate('ScreenShowqr')}
+        style={styles.text}>Nofrets Poai</Text>
         {/* </Center> */}
         {/* <Center horizontal> */}
         {/* </Center> */}

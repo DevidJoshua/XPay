@@ -7,6 +7,7 @@ import ScreenLogin from '../Screens/Login/ScreenLogin'
 import ScreenOtpValidation from '../Screens/OtpValidation/ScreenOtpValidation'
 import ScreenAddCard from '../Screens/AddCard/ScreenAddCard'
 import ScreenHome from '../Screens/Home/ScreenHome'
+import ScreenEditProfile from '../Screens/Home/ScreenEditProfile'
 import ScreenSignup from '../Screens/Signup/ScreenSignup'
 import ScreenShowqr from '../Screens/Showqr/ScreenShowqr'
 import ScreenScanQr from '../Screens/ScanQr/ScreenScanQr'
@@ -40,7 +41,8 @@ const loggedinNavigator = StackNavigator({
   ScreenScanQr: { screen: ScreenScanQr },
   ScreenSuccessBind: { screen: ScreenSuccessBind },
   ScreenAddCard: { screen: ScreenAddCard },
-  ScreenTransactionStatus: { screen: ScreenTransactionStatus }
+  ScreenTransactionStatus: { screen: ScreenTransactionStatus },
+  ScreenEditProfile:{screen:ScreenEditProfile }
 }, {
   // Default config for all screens
   headerMode: 'none',
