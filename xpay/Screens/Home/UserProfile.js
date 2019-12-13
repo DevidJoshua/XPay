@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { StyleSheet, View, Image, Text, TouchableOpacity } from 'react-native'
-import { Center } from '@builderx/utils'
-import Icon from 'react-native-vector-icons/MaterialCommunityIcons'
+import { Button, Icon } from 'native-base'
+// import { Center } from '@builderx/utils'
+// import Icon from 'react-native-vector-icons/MaterialCommunityIcons'
 import { isIphoneX } from '../../Lib/helper/platform'
 import { Images } from '../../Themes'
 
@@ -14,7 +15,7 @@ export default class UserProfile extends Component {
   //
   // // Defaults for props
   static defaultProps = {
-    showSaldo: true
+    showSaldo: false
   }
 
   constructor (props) {
@@ -51,9 +52,14 @@ export default class UserProfile extends Component {
         }
         {
           !this.state.showSaldo && (
-            <TouchableOpacity style={styles.iconStack} onPress={this.handleToggleShowSaldo}>
-              <Image source={Images.walletIcon} />
-            </TouchableOpacity>
+            // <TouchableOpacity style={styles.iconStack} onPress={this.handleToggleShowSaldo}>
+            <View style={styles.iconStack} onPress={this.handleToggleShowSaldo}>
+              {/* <Image source={Images.walletIcon} /> */}
+              <Button primary iconRight onPress={this.handleToggleShowSaldo}>
+                <Text style={{ color: '#fff', marginLeft: 5 }}>View Saldo</Text>
+                <Image source={Images.walletIcon} />
+              </Button>
+            </View>
           )
         }
       </View>
@@ -65,15 +71,15 @@ const styles = StyleSheet.create({
   container: {
     backgroundColor: 'rgba(218,55,49,1)',
     alignItems: 'center',
-    borderRadius: 2,
-    overflow: 'hidden'
+    overflow: 'hidden',
+    height: 230
   },
   image: {
     width: 103,
     height: 103,
     backgroundColor: '#CCC',
     borderRadius: isIphoneX ? 50 : 100,
-    margin: 40
+    margin: 10
   },
   text: {
     color: 'rgba(255,255,255,1)',

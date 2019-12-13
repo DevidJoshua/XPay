@@ -25,7 +25,7 @@ class CardSwipe extends Component {
           {
             dataCard.map(r => (
               <View key={r.id}>
-                <View style={{ flex: 1 }}>
+                <View style={{ flex: 1, margin: 5 }}>
                   <Image source={r.imgSource} style={{ flex: 1, resizeMode: 'contain', width: '100%' }} />
                 </View>
                 <View style={{ flexDirection: 'row', justifyContent: 'center' }}>
